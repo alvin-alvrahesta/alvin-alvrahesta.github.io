@@ -1,0 +1,34 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 3000px;
+  overflow-x: hidden;
+}
+
+.myheader {
+  min-height: 60vh;
+  width: 100vw;
+  overflow: hidden;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+.mynavbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.textim {
+  color: #979da9;
+  font-weight: 400;
+  font-size: 32pt;
+}
+.textnama {
+  color: #eef2fc;
+  font-weight: 600;
+  font-size: 36pt;
+}
+
+.mybtn-contact {
+  background-color: #97a9da30;
+  border: none;
+}
