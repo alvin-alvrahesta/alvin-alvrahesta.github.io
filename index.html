@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar p-0 m-0 py-4 fixed-top navbar-expand-lg navbar-dark bg-transparent mynavbar">
+    <nav id="navbar-example2" class="navbar p-0 m-0 py-3 fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand mb-0 h1 pe-5" href="#"><i class="bi bi-emoji-smile text-warning"></i> Alvin</a>
         <button
@@ -43,13 +43,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#aboutme">About Me</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
     <!-- Akhir Navbar -->
 
     <!-- Header -->
-    <div id="header" class="myheader">
+    <section id="home" class="myheader">
       <div class="container flex-wrap align-items-end">
         <div class="row">
           <div class="col-lg-6 text-end pt-5 mt-4 pt-lg-2 mt-lg-2 align-self-center order-lg-2">
@@ -69,26 +69,26 @@
             </p>
             <div class="container-btn-contact mt-5 text-center text-lg-end">
               <a class="btn btn-dark mybtn-contact mt-2 py-2 px-3" href="https://dribbble.com/alvin-alvrahesta"
-                ><img src="img/dribbble.png" alt="Icon Linkedin" width="24px" height="24px" /> Dribbble</a
+                ><img class="me-1" src="img/dribbble.png" alt="Icon Linkedin" width="24px" height="24px" /> Dribbble</a
               >
               <a class="btn btn-dark mybtn-contact mt-2 py-2 px-3 ms-1" href="https://www.instagram.com/alvin.alvrahesta"
-                ><img src="img/instagram.png" alt="Icon Linkedin" width="24px" height="24px" /> Instagram</a
+                ><img class="me-1" src="img/instagram.png" alt="Icon Linkedin" width="24px" height="24px" /> Instagram</a
               >
               <a class="btn btn-dark mybtn-contact mt-2 py-2 px-3 ms-1" href="https://www.linkedin.com/in/alvin-alvrahesta/"
-                ><img src="img/linkedin.png" alt="Icon Linkedin" width="24px" height="24px" /> LinkedIn</a
+                ><img class="me-1" src="img/linkedin.png" alt="Icon Linkedin" width="24px" height="24px" /> LinkedIn</a
               >
             </div>
             <div class="container-btn-contact mt-2 text-center text-lg-end">
               <a class="btn btn-dark mybtn-contact py-2 px-3" href="https://api.whatsapp.com/send/?phone=62895360242060&text&app_absent=0"
-                ><img src="img/whatsapp.png" alt="Icon Linkedin" width="24px" height="24px" /> WhatsApp</a
+                ><img class="me-1" src="img/whatsapp.png" alt="Icon Linkedin" width="24px" height="24px" /> WhatsApp</a
               >
               <a class="btn btn-dark mybtn-contact py-2 px-3 ms-1" href="mailto:someone@yoursite.com"
-                ><img src="img/email.png" alt="Icon Linkedin" width="24px" height="24px" /> Email</a
+                ><img class="me-1" src="img/email.png" alt="Icon Linkedin" width="24px" height="24px" /> Email</a
               >
             </div>
           </div>
           <img
-            class="col-lg-6 text-center align-items-end order-lg-1 p-0"
+            class="col-lg-6 text-center align-items-end order-lg-1 p-0 fotoku"
             style="margin-bottom: -100px"
             src="img/foto.png"
             alt="Alvin Alvrahesta"
@@ -96,8 +96,164 @@
           />
         </div>
       </div>
-    </div>
+    </section>
     <!-- Akhir Header -->
+
+    <!-- Portofolio -->
+    <section id="portfolio">
+      <div class="portofolio">
+        <!-- <section id="portofolio"> -->
+        <div class="container py-5 mt-0">
+          <div class="text-center pt-5 h1 lh-base" style="color: #f5ba20">
+            Let's get to know <span class="h1 fw-bold text-nowrap">&nbsp;My Works</span>
+          </div>
+          <div class="d-flex justify-content-center pb-5">
+            <hr />
+          </div>
+          <div class="card mycard-porto">
+            <div class="card-header h4 mycard-portoheader text-center text-light">MOTION GRAPHIC PROJECT</div>
+            <div class="card-body">
+              <div class="row align-items-center px-2">
+                <div class="col-xl-6 d-flex align-items-end divboot">
+                  <img
+                    class="align-self-center me-n5 order-2 pt-3"
+                    style="margin-left: -86%; z-index: 0"
+                    src="img/boot1.png"
+                    alt="Nusantara Bootanimation"
+                    width="62%"
+                  />
+                  <img
+                    class="align-self-end order-1 pt-3"
+                    style="margin-left: 54%; z-index: -1"
+                    src="img/boot2.png"
+                    alt="Nusantara Bootanimation"
+                    width="37%"
+                  />
+                </div>
+                <div class="col-xl-6 mt-4 text-center text-xl-start">
+                  <p class="text-white h5 fw-lighter lh-lg">
+                    First, I once made a Custom Boot Animation for a Custom ROM (Nusantara Project Android ROM).
+                  </p>
+                  <p class="text-white-50 h5 fw-lighter mt-4">Software: Adobe After Effects</p>
+                  <a class="btn btn-dark mybtn-contact py-2 px-3 mt-4 mb-3" href="mailto:someone@yoursite.com"
+                    ><img src="img/telegram.png" alt="Icon Linkedin" width="24px" height="24px" /> See the Animation!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mycard-porto mt-5">
+            <div class="card-header h4 mycard-portoheader text-center text-light">WEB APPLICATION PROJECT - INVENTORY MANAGEMENT</div>
+            <div class="card-body">
+              <div class="row align-items-center p-lg-4 px-1">
+                <div class="col-xl-12 d-flex align-items-center divboot">
+                  <div class="row py-1">
+                    <div class="col-xl-6 text-center">
+                      <img
+                        onclick="window.open('img/jvt0.png')"
+                        id="myImg"
+                        class="mt-xl-0 mt-3 rounded gambarboot"
+                        src="img/jvt0.png"
+                        alt="Home Dashboard JVT Inventory Management Web Application"
+                        width="100%"
+                      />
+                      <small class="text-white-50 fw-lighter">Home / Dashboard Page - JVT Inventory Management Web Application</small><br />
+                    </div>
+                    <div class="col-xl-6 text-center">
+                      <img
+                        onclick="window.open('img/jvt1.png')"
+                        id="myImg2"
+                        class="mt-xl-0 mt-3 rounded gambarboot"
+                        src="img/jvt1.png"
+                        alt="Detail Hardware JVT Inventory Management Web Application"
+                        width="100%"
+                      />
+                      <small class="text-white-50 fw-lighter">Detail Hardware Page - JVT Inventory Management Web Application</small><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 d-flex align-items-center">
+                  <div class="col-xl-12 mt-3 text-center text-xl-start">
+                    <p class="text-white h5 fw-lighter lh-lg">
+                      This is the first internship project I did with one of my college friends. We created a website-based software and hardware
+                      management application at PT. Java Valley Technology, Semarang.
+                    </p>
+                    <p class="text-white-50 h5 fw-lighter mt-4">Framework : Laravel 8</p>
+                    <p class="text-white-50 h5 fw-lighter mt-2">UI Framework : Bootstrap 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mycard-porto mt-5">
+            <div class="card-header h4 mycard-portoheader text-center text-light">ANDROID APP UI DESIGN PROJECT</div>
+            <div class="card-body">
+              <div class="row align-items-center px-lg-4 px-1">
+                <div class="col-xl-12 d-flex align-items-center divboot">
+                  <div class="row py-3">
+                    <div class="col-4 text-center p-0">
+                      <img
+                        onclick="window.open('img/pj1.png')"
+                        class="mt-xl-0 mt-3 rounded gambarpj"
+                        src="img/pj1.png"
+                        alt="Pariwidaring Jateng Screentshot 1"
+                        width="100%"
+                      />
+                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screentshot 1</small><br />
+                    </div>
+                    <div class="col-4 text-center p-0">
+                      <img
+                        onclick="window.open('img/pj2.png')"
+                        class="mt-xl-0 mt-3 rounded gambarpj"
+                        src="img/pj2.png"
+                        alt="Pariwidaring Jateng Screentshot 2"
+                        width="100%"
+                      />
+                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screentshot 2</small><br />
+                    </div>
+                    <div class="col-4 text-center p-0">
+                      <img
+                        onclick="window.open('img/pj3.png')"
+                        class="mt-xl-0 mt-3 rounded gambarpj"
+                        src="img/pj3.png"
+                        alt="Pariwidaring Jateng Screentshot 3"
+                        width="100%"
+                      />
+                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screentshot 3</small><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 d-flex align-items-center">
+                  <div class="col-xl-12 mt-3 text-center text-xl-start">
+                    <p class="text-white h5 fw-lighter lh-lg">
+                      I got a project for mobile application design from my friend. I implement UI Design through a design that has been made by my
+                      friend.
+                    </p>
+                    <p class="text-white-50 h5 fw-lighter mt-4">Software : Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </section> -->
+      </div>
+    </section>
+    <!-- Akhir Portofolio -->
+
+    <!-- About Me -->
+    <section id="aboutme">
+      <div class="aboutme">
+        <div class="container py-5 mt-0">
+          <div class="text-center pt-5 h1 lh-base" style="color: #f5ba20">About <span class="h1 fw-bold text-nowrap">&nbsp;Me</span></div>
+          <div class="d-flex justify-content-center pb-5">
+            <hr />
+          </div>
+          <div class="text-center h1 lh-base" style="color: #f5ba20">Cooming Soon!</div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About Me -->
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script
@@ -108,15 +264,5 @@
 
     <!-- My Javascript -->
     <script src="myjs.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          var scroll = $(window).scrollTop();
-          var $nav = $(".mynavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > 100);
-        });
-      });
-    </script>
   </body>
 </html>
