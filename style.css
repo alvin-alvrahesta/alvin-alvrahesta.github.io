@@ -5,7 +5,7 @@ body {
 }
 
 .myheader {
-  min-height: 60vh;
+  min-height: 80vh;
   width: 100vw;
   overflow: hidden;
   background: rgb(24, 50, 73);
