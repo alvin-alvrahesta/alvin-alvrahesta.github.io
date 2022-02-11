@@ -97,6 +97,7 @@
               >
             </div>
           </div>
+
           <img
             class="col-lg-6 text-center align-items-end order-lg-1 p-0 fotoku"
             style="margin-bottom: -100px"
@@ -475,17 +476,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.from("nav", { duration: 2.5, ease: "power3.out", y: -200, opacity: 0, ease: "back.out(1.7)" });
+      gsap.from("nav", { duration: 2.5, ease: "power3.out", y: -200, opacity: 0, ease: "power3.out" });
       gsap.from(".fotoku", { duration: 2.5, opacity: 0, delay: 0.5 });
       // gsap.from(".textket", { duration: 2, opacity: 0, y: -100, delay: 1 });
-      gsap.from(".textket", { x: -300, duration: 2.5, opacity: 0, delay: 1, ease: "back.out(1.7)" });
-      gsap.from(".textnama", { delay: 1, x: -400, duration: 2.5, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".textim", { delay: 1, x: -300, duration: 2.5, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".btnlink", { x: -80, duration: 0.8, opacity: 0, delay: 1.5, ease: "none" });
-      gsap.from(".btnins", { x: -80, duration: 0.8, opacity: 0, delay: 1.75, ease: "none" });
-      gsap.from(".btndrib", { x: -80, duration: 0.8, opacity: 0, delay: 2, ease: "none" });
-      gsap.from(".btnemail", { x: -80, duration: 0.8, opacity: 0, delay: 2.25, ease: "none" });
-      gsap.from(".btnwhat", { x: -80, duration: 0.8, opacity: 0, delay: 2.5, ease: "none" });
+      gsap.from(".textket", { x: -80, duration: 1, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+      gsap.from(".textnama", { delay: 1, x: -120, duration: 1, opacity: 0, ease: "back.out(1.7)" });
+      gsap.from(".textim", { delay: 1, x: -80, duration: 1, opacity: 0, ease: "back.out(1.7)" });
+      gsap.from(".btnlink", { x: -80, duration: 1, opacity: 0, delay: 1.5, ease: "back.out(1.7)" });
+      gsap.from(".btnins", { x: -80, duration: 1, opacity: 0, delay: 1.75, ease: "back.out(1.7)" });
+      gsap.from(".btndrib", { x: -80, duration: 1, opacity: 0, delay: 2, ease: "back.out(1.7)" });
+      gsap.from(".btnemail", { x: -80, duration: 1, opacity: 0, delay: 2.25, ease: "back.out(1.7)" });
+      gsap.from(".btnwhat", { x: -80, duration: 1, opacity: 0, delay: 2.5, ease: "back.out(1.7)" });
       gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
     </script>
   </body>
