@@ -47,6 +47,18 @@ body {
   background-color: #97a9da30;
   border: none;
 }
+a {
+  letter-spacing: 2px;
+  color: #fbfbfb;
+}
+.active {
+  font-weight: 700;
+  color: #f5ba20 !important;
+}
+a:hover,
+a:focus {
+  color: #f5ba20 !important;
+}
 
 .btn {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
@@ -54,7 +66,7 @@ body {
   transition: 0.5s;
 }
 .btn:hover {
-  color: #74bcff;
+  color: #f5ba20;
   transform: translateY(-3px);
 }
 
@@ -172,4 +184,14 @@ hr {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #f5ba20;
+}
+
+/* ============= BUTTON SCROLL TO TOP ============== */
+#btn-back-to-top {
+  z-index: 9;
+  cursor: pointer;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  display: none;
 }
