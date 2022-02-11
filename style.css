@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
 }
 
 body {
@@ -53,7 +55,7 @@ a {
 }
 .active {
   font-weight: 700;
-  color: #f5ba20 !important;
+  /* color: #f5ba20 !important; */
 }
 a:hover,
 a:focus {
