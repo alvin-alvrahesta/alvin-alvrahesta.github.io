@@ -126,14 +126,14 @@
               <div class="row align-items-center px-2">
                 <div class="col-xl-6 d-flex align-items-end divboot">
                   <img
-                    class="align-self-center me-n5 order-2 pt-3"
+                    class="align-self-center me-n5 order-2 pt-3 gambarnusa"
                     style="margin-left: -86%; z-index: 0"
                     src="img/boot1.png"
                     alt="Nusantara Bootanimation"
                     width="62%"
                   />
                   <img
-                    class="align-self-end order-1 pt-3"
+                    class="align-self-end order-1 pt-3 gambarnusa"
                     style="margin-left: 54%; z-index: -1"
                     src="img/boot2.png"
                     alt="Nusantara Bootanimation"
@@ -200,8 +200,8 @@
             <div class="card-body">
               <div class="row align-items-center px-lg-4 px-1">
                 <div class="col-xl-12 d-flex align-items-center divboot">
-                  <div class="row py-3">
-                    <div class="col-4 text-center p-0">
+                  <div class="row py-3 justify-content-center">
+                    <div class="col-3 text-center p-0">
                       <img
                         onclick="window.open('img/pj1.png')"
                         class="mt-xl-0 mt-3 rounded gambarpj"
@@ -209,9 +209,9 @@
                         alt="Pariwidaring Jateng Screenshot 1"
                         width="100%"
                       />
-                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 1</small><br />
+                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 1</small><br /></div>
                     </div>
-                    <div class="col-4 text-center p-0">
+                    <div class="col-3 text-center p-0">
                       <img
                         onclick="window.open('img/pj2.png')"
                         class="mt-xl-0 mt-3 rounded gambarpj"
@@ -219,9 +219,9 @@
                         alt="Pariwidaring Jateng Screenshot 2"
                         width="100%"
                       />
-                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 2</small><br />
+                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 2</small><br /></div>
                     </div>
-                    <div class="col-4 text-center p-0">
+                    <div class="col-3 text-center p-0">
                       <img
                         onclick="window.open('img/pj3.png')"
                         class="mt-xl-0 mt-3 rounded gambarpj"
@@ -229,7 +229,7 @@
                         alt="Pariwidaring Jateng Screenshot 3"
                         width="100%"
                       />
-                      <small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 3</small><br />
+                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 3</small><br /></div>
                     </div>
                   </div>
                 </div>
@@ -276,9 +276,10 @@
                 My name is <span class="text-warning">Alvin Alvrahesta</span> who is usually called Alvin or Hesta. I was born in
                 <span class="text-warning">Semarang Regency</span> on <span class="text-warning">February 16, 2000</span>. I really like anything
                 related to art and technology, especially graphic design. Therefore, I plunged into the world of Website Development. In the website
-                there are 2 parts, namely Frontend (UI Design) and Backend (Managing Database), and I like both parts. Since studying at
-                <span class="text-warning">Diponegoro University</span>, I am interested in the <span class="text-warning">Laravel 8</span> and
-                <span class="text-warning">Bootstrap</span> Framework until now.
+                there are 2 parts, namely Frontend (<span class="text-warning">UI Design</span>) and Backend (<span class="text-warning"
+                  >Database Management</span
+                >), and I like both parts. Since studying at <span class="text-warning">Diponegoro University</span>, I am interested in the
+                <span class="text-warning">Laravel 8</span> and <span class="text-warning">Bootstrap</span> Framework until now.
               </div>
             </div>
           </div>
@@ -453,9 +454,18 @@
     <script>
       AOS.init({
         duration: 1000,
+        once: true,
       });
     </script>
     <!-- My Javascript -->
     <script src="myjs.js"></script>
+    <!-- My Javascript -->
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".gambarpj, .gambarboot, .gambarnusa"), {
+        max: 25,
+        speed: 2500,
+      });
+    </script>
   </body>
 </html>
