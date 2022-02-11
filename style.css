@@ -191,7 +191,9 @@ hr {
   z-index: 9;
   cursor: pointer;
   position: fixed;
-  bottom: 18px;
+  bottom: 76px;
   right: 18px;
   display: none;
+  transition: 0.5s;
+  background: rgb(24, 50, 73);
 }
