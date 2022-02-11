@@ -37,12 +37,12 @@ body {
 .textim {
   color: #979da9;
   font-weight: 400;
-  font-size: 32pt;
+  font-size: 30pt;
 }
 .textnama {
   color: #eef2fc;
   font-weight: 600;
-  font-size: 36pt;
+  font-size: 30pt;
 }
 
 .mybtn-contact {
@@ -65,11 +65,11 @@ a:focus {
 .btn {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
   padding: 13px 16px !important;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .btn:hover {
   color: #f5ba20;
-  transform: translateY(-3px);
+  transform: translateY(-3px) !important;
 }
 
 .portofolio {
