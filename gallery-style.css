@@ -4,13 +4,13 @@
 
 .gal {
   display: block;
-  background: #ffffff;
+  background: #fbfbfb;
   width: 10%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 10px 10px;
-  transition: 1s ease-in-out !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
+  transition: 0.6s ease-in-out !important;
 }
 
 .gal:hover {
@@ -20,7 +20,7 @@
 
 .gallery1 {
   height: 80%;
-  background-image: url("https://unsplash.it/1200/768.jpg?image=251");
+  background-image: url("img/gallery/header/ben-griffiths-gAe1pHGc6ms-unsplash.jpg");
   animation: height1 25s ease-in-out infinite;
 }
 
@@ -43,7 +43,7 @@
 }
 .gallery2 {
   height: 770%;
-  background-image: url("https://unsplash.it/1200/768.jpg?image=252");
+  background-image: url("img/gallery/header/austin-poon-JO_S6ewBqAk-unsplash.jpg");
   animation: height2 25s ease-in-out infinite;
 }
 
@@ -66,7 +66,7 @@
 }
 .gallery3 {
   height: 30%;
-  background-image: url("https://unsplash.it/1200/768.jpg?image=253");
+  background-image: url("img/gallery/header/nick-fewings-0y_DB18swVc-unsplash.jpg");
   animation: height3 25s ease-in-out infinite;
 }
 @keyframes height3 {
@@ -88,7 +88,7 @@
 }
 .gallery4 {
   height: 90%;
-  background-image: url("https://unsplash.it/1200/768.jpg?image=254");
+  background-image: url("img/gallery/header/roman-synkevych-vXInUOv1n84-unsplash.jpg");
   animation: height4 25s ease-in-out infinite;
 }
 @keyframes height4 {
@@ -110,7 +110,7 @@
 }
 .gallery5 {
   height: 60%;
-  background-image: url("https://unsplash.it/1200/768.jpg?image=255");
+  background-image: url("img/gallery/header/simon-noh-0rmby-3OTeI-unsplash.jpg");
   animation: height5 25s ease-in-out infinite;
 }
 @keyframes height5 {
@@ -164,8 +164,8 @@ input[type="checkbox"] {
   position: relative;
   height: calc(5vw + 70px);
   width: calc(5vw + 70px);
-  background: rgba(255, 255, 255, 0.01);
-  color: rgba(230, 230, 255, 0.3);
+  background: rgba(92, 181, 255, 0);
+  color: rgba(162, 202, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@ input[type="checkbox"] {
   cursor: pointer;
   margin: calc(0.2vh + 5px) calc(0.1vh + 2px) 0px 12px;
   border-radius: 20px;
-  box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.09), 4px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 8px rgba(114, 170, 255, 0.09), 4px 4px 10px rgba(1, 12, 19, 0.5);
 }
 
 input[type="checkbox"]:checked ~ div {
