@@ -184,6 +184,10 @@ input[type="checkbox"]:checked ~ div {
   animation: glow 3.5s linear infinite;
 }
 
+input[type="checkbox"]:checked ~ .gallery-text {
+  animation: size 5s ease-in-out infinite;
+}
+
 @keyframes glow {
   0% {
     filter: hue-rotate(0deg);
@@ -193,6 +197,18 @@ input[type="checkbox"]:checked ~ div {
   }
   100% {
     filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes size {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -317,6 +333,7 @@ a:focus {
 }
 
 .column-gallery img {
+  cursor: pointer;
   margin-top: 1.25rem;
   border-radius: 15px;
   vertical-align: middle;
@@ -326,7 +343,12 @@ a:focus {
 }
 
 .column-gallery img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  border-radius: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fbfbfb;
+  box-shadow: rgb(3, 14, 22) 2px 2px 100px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
