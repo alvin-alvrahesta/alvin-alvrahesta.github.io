@@ -58,11 +58,11 @@
                 <ul class="d-flex">
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">G</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="100">G</div>
                   </li>
                   <li class="">
                     <input type="checkbox" checked />
-                    <div class="gallery-text fw-bolder">A</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="100">A</div>
                   </li>
                 </ul>
               </div>
@@ -70,15 +70,15 @@
                 <ul class="d-flex">
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">L</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="300">L</div>
                   </li>
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">L</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="500">L</div>
                   </li>
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">E</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="700">E</div>
                   </li>
                 </ul>
               </div>
@@ -86,22 +86,22 @@
                 <ul class="d-flex mb-lg-5 mb-0">
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">R</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="1100">R</div>
                   </li>
                   <li class="">
                     <input type="checkbox" />
-                    <div class="gallery-text fw-bolder">Y</div>
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="1300">Y</div>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-6 galheader d-flex justify-content-evenly align-items-lg-center align-items-end">
-            <div class="gal gallery1 mb-lg-0"></div>
-            <div class="gal gallery2 mb-lg-0"></div>
-            <div class="gal gallery3 mb-lg-0"></div>
-            <div class="gal gallery4 mb-lg-0"></div>
-            <div class="gal gallery5 mb-lg-0"></div>
+            <div class="gal gallery1 mb-lg-0" data-aos="fade-down" data-aos-delay="100" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery2 mb-lg-0" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery1 mb-lg-0" data-aos="fade-down" data-aos-delay="500" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery4 mb-lg-0" data-aos="fade-down" data-aos-delay="700" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery5 mb-lg-0" data-aos="fade-down" data-aos-delay="900" data-aos-anchor=".gallery1"></div>
           </div>
         </div>
       </div>
@@ -158,14 +158,10 @@
       // gsap.from("nav", { duration: 2, y: -200 });
       // gsap.from(".fotoku", { duration: 2.5, opacity: 0, delay: 0.5 });
       // gsap.from(".textket", { duration: 2, opacity: 0, y: -100, delay: 1 });
-      gsap.from(".textket", { x: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
-      gsap.from(".textnama", { delay: 1, x: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".textim", { delay: 1, x: -200, duration: 1.4, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".btnlink", { x: -80, duration: 1.5, opacity: 0, delay: 1.5, ease: "back.out(1.7)" });
-      gsap.from(".btnins", { x: -80, duration: 1.5, opacity: 0, delay: 1.75, ease: "back.out(1.7)" });
-      gsap.from(".btndrib", { x: -80, duration: 1.5, opacity: 0, delay: 2, ease: "back.out(1.7)" });
-      gsap.from(".btnemail", { x: -80, duration: 1.5, opacity: 0, delay: 2.25, ease: "back.out(1.7)" });
-      gsap.from(".btnwhat", { x: -80, duration: 1.5, opacity: 0, delay: 2.5, ease: "back.out(1.7)" });
+      gsap.from(".textket", { y: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+      gsap.from(".textnama", { delay: 1, y: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
+      gsap.from(".textim", { delay: 1, y: -200, duration: 1.4, opacity: 0, ease: "back.out(1.7)" });
+      // gsap.from(".gal", { y: -200, duration: 1, opacity: 0, delay: 0.5 });
       gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
     </script>
   </body>
