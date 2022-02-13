@@ -1,0 +1,283 @@
+ul {
+  margin-top: 10px;
+  margin-left: -20px;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+/* label {
+  position: relative;
+} */
+
+input[type="checkbox"] {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  cursor: pointer;
+  height: calc(5vw + 70px);
+  width: calc(5vw + 70px);
+  margin: calc(0.2vh + 5px) calc(0.1vh + 2px) 0px 12px;
+  z-index: 100 !important;
+  border-radius: 20px !important;
+}
+
+.gallery-text {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: calc(5vw + 70px);
+  width: calc(5vw + 70px);
+  background: rgba(255, 255, 255, 0.01);
+  color: rgba(230, 230, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(3vmax + 2rem);
+  cursor: pointer;
+  margin: calc(0.2vh + 5px) calc(0.1vh + 2px) 0px 12px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 8px rgba(255, 255, 255, 0.09), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"]:checked ~ div {
+  box-shadow: 4px 4px 30px rgba(42, 103, 153, 0.15), inset 4px 4px 6px rgba(0, 0, 0, 0.2), 0 0 2px rgba(44, 91, 153, 0.2),
+    3px 3px 40px rgba(23, 49, 80, 0.02);
+  color: rgb(213, 227, 253);
+  text-shadow: 0 0 40px rgb(78, 133, 235), 0 0 40px rgb(78, 133, 235);
+  animation: glow 3.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(80deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+/* input[type="checkbox"]:checked ~ .gallery-text {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.01), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 2px white;
+  animation: glow 1.5s linear infinite;
+} */
+
+/* @keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  } 
+}*/
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  /* height: 3000px; */
+  overflow-x: hidden;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+.myheader {
+  z-index: 1;
+  width: 100vw;
+  overflow: hidden;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* .mynavbar {
+    background-color: #fff;
+    transition: background-color 200ms linear;
+  } */
+
+.bg-dark {
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgb(20, 42, 61) 0%, rgba(9, 24, 47, 1) 100%);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+.textim {
+  color: #979da9;
+  font-weight: 400;
+  font-size: 30pt;
+}
+.textnama {
+  color: #eef2fc;
+  font-weight: 600;
+  font-size: 30pt;
+}
+
+.mybtn-contact {
+  background-color: #97a9da30;
+  border: none;
+}
+a {
+  letter-spacing: 1px;
+  color: #fbfbfb;
+}
+.active {
+  font-weight: 700;
+  /* color: #f5ba20 !important; */
+}
+a:hover,
+a:focus {
+  color: #f5ba20 !important;
+}
+
+.btn {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
+  padding: 13px 16px !important;
+  transition: 0.6s;
+}
+.btn:hover {
+  color: #f5ba20;
+  transform: translateY(-3px) !important;
+}
+
+.portofolio {
+  width: 100vw;
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+.aboutme {
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+.footer {
+  background: rgb(24, 50, 73);
+  background: radial-gradient(circle, rgba(24, 50, 73, 1) 0%, rgba(9, 24, 47, 1) 100%);
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 5px;
+  opacity: 1;
+  color: #f5ba20;
+  background-color: #f5ba20;
+}
+.hr-long {
+  margin-bottom: 20px;
+  height: 1px;
+  opacity: 0.1;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.text-white {
+  color: #fbfbfb !important;
+}
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+.mycard-porto {
+  min-height: 550px;
+  border-style: block;
+  border-width: 2px 0px 0px 0px;
+  border-color: #f5ba20;
+  border-radius: 20px !important;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(95, 130, 169, 0.16) 100%);
+}
+
+.mycard-aboutme {
+  padding: 0.5rem 1rem;
+  border-style: block;
+  border-width: 2px 0px 0px 0px;
+  border-color: #f5ba20;
+  /* border-style: none !important; */
+  border-radius: 20px !important;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(95, 130, 169, 0.13) 100%);
+}
+
+.mycard-portoheader {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  background-color: #051527;
+  padding: calc(1vw + 0.7rem);
+  letter-spacing: 3px;
+}
+
+.divboot {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.gambarboot {
+  cursor: pointer;
+}
+.gambarpj {
+  cursor: pointer;
+}
+
+.foto-aboutme {
+  display: block;
+  background: rgba(138, 177, 209, 0.03);
+  height: 240px;
+  width: 240px;
+  background-image: url("img/foto.png");
+  background-size: cover;
+}
+/* ============== SCROLL BAR ================= */
+
+/* width */
+::-webkit-scrollbar {
+  background: rgba(9, 24, 47, 1);
+  width: 10px;
+  /* margin: 3px !important; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(24, 50, 73); */
+  border-radius: 0px;
+  margin: 4px 3px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(121, 146, 168);
+  border-radius: 8px;
+  /* margin: 3px !important; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f5ba20;
+}
+
+/* ============= BUTTON SCROLL TO TOP ============== */
+#btn-back-to-top {
+  z-index: 9;
+  cursor: pointer;
+  position: fixed;
+  bottom: 76px;
+  right: 18px;
+  display: none;
+  transition: 0.5s;
+  background: rgb(24, 50, 73);
+}
