@@ -165,7 +165,7 @@ input[type="checkbox"] {
   height: calc(5vw + 70px);
   width: calc(5vw + 70px);
   background: rgba(92, 181, 255, 0);
-  color: rgba(162, 202, 255, 0.3);
+  color: rgba(233, 243, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
