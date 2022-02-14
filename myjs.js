@@ -1,7 +1,6 @@
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: "#navbar-example2",
 });
-
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
