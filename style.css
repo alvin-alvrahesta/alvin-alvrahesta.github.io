@@ -44,6 +44,8 @@ body {
   position: absolute;
   -webkit-animation: circle 4s infinite;
   animation: circle 15s infinite;
+  animation-delay: 5s;
+  opacity: 0;
 }
 
 .circle2 {
@@ -57,58 +59,60 @@ body {
   position: absolute;
   -webkit-animation: circle2 4s infinite;
   animation: circle2 15s infinite;
+  animation-delay: 5s;
+  opacity: 0;
 }
 
 @-webkit-keyframes circle {
   0% {
-    /* border: 2px solid orange; */
+    opacity: 0;
     left: -10%;
     top: 0px;
   }
   25% {
-    /* border: 2px solid red; */
+    opacity: 1;
     left: 40%;
     top: 20%;
   }
   50% {
-    /* border: 2px solid yellow; */
+    opacity: 1;
     left: 20%;
     top: 45%;
   }
   75% {
-    /* border: 2px solid orange; */
+    opacity: 1;
     left: 5%;
     top: 60%;
   }
   100% {
-    /* border: 2px solid orange; */
+    opacity: 0;
     left: -10%;
     top: 0px;
   }
 }
 @-webkit-keyframes circle2 {
   0% {
-    /* border: 2px solid orange; */
+    opacity: 0;
     left: 50%;
     top: 80%;
   }
   25% {
-    /* border: 2px solid red; */
+    opacity: 1;
     left: 10%;
     top: 50%;
   }
   50% {
-    /* border: 2px solid yellow; */
+    opacity: 1;
     left: -10%;
     top: 10%;
   }
   75% {
-    /* border: 2px solid orange; */
+    opacity: 1;
     left: 45%;
     top: 10%;
   }
   100% {
-    /* border: 2px solid orange; */
+    opacity: 0;
     left: 50%;
     top: 80%;
   }
