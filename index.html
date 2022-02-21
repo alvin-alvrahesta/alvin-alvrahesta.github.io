@@ -80,11 +80,13 @@
         <div class="container flex-wrap align-items-end">
           <div class="row">
             <div class="col-lg-6 text-end pt-5 mt-4 pt-lg-2 mt-lg-2 align-self-center order-lg-2 headerkanan">
-              <h2 class="m-0 mt-5 textim text-center text-lg-end">I'm</h2>
-              <h1 class="fw-bold textnama text-center text-lg-end">A Freelancer</h1>
-              <p class="mt-4 mt-lg-5 fw-light fs-6 text-center text-white text-lg-end textket">
-                A lover of technology and the arts, especially on websites including Web Design and Web Development.
-              </p>
+              <div class="textataskanan">
+                <h2 class="m-0 mt-5 textim text-center text-lg-end">I'm</h2>
+                <h1 class="fw-bold textnama text-center text-lg-end">A Freelancer</h1>
+                <p class="mt-4 mt-lg-5 fw-light fs-6 text-center text-white text-lg-end textket">
+                  A lover of technology and the arts, especially on websites including Web Design and Web Development.
+                </p>
+              </div>
               <div class="container-btn-contact mt-5 text-center text-lg-end">
                 <a class="btn btn-dark mybtn-contact mt-2 py-2 px-3 btndrib" href="https://dribbble.com/alvin-alvrahesta"
                   ><img class="me-1" src="img/dribbble.png" alt="Icon Linkedin" width="24px" height="24px" /> Dribbble</a
@@ -524,14 +526,14 @@
       // gsap.from("nav", { duration: 2, y: -200 });
       // gsap.from(".fotoku", { y: 10, duration: 2, opacity: 0 });
       // gsap.from(".textket", { duration: 2, opacity: 0, y: -100, delay: 1 });
-      gsap.from(".textket", { x: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
-      gsap.from(".textnama", { delay: 1, x: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".textim", { delay: 1, x: -200, duration: 1.4, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".btnlink", { x: -80, duration: 1.5, opacity: 0, delay: 1.5, ease: "back.out(1.7)" });
-      gsap.from(".btnins", { x: -80, duration: 1.5, opacity: 0, delay: 1.75, ease: "back.out(1.7)" });
-      gsap.from(".btndrib", { x: -80, duration: 1.5, opacity: 0, delay: 2, ease: "back.out(1.7)" });
-      gsap.from(".btnemail", { x: -80, duration: 1.5, opacity: 0, delay: 2.25, ease: "back.out(1.7)" });
-      gsap.from(".btnwhat", { x: -80, duration: 1.5, opacity: 0, delay: 2.5, ease: "back.out(1.7)" });
+      // gsap.from(".textket", { x: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+      // gsap.from(".textnama", { delay: 1, x: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
+      gsap.from(".textataskanan", { delay: 1, x: -200, duration: 1.4, opacity: 0, ease: "Power2.easeOut" });
+      gsap.from(".btnlink", { x: -80, duration: 1.5, opacity: 0, delay: 2.5, ease: "back.out(1.7)" });
+      gsap.from(".btnins", { x: -80, duration: 1.5, opacity: 0, delay: 2.75, ease: "back.out(1.7)" });
+      gsap.from(".btndrib", { x: -80, duration: 1.5, opacity: 0, delay: 3, ease: "back.out(1.7)" });
+      gsap.from(".btnemail", { x: -80, duration: 1.5, opacity: 0, delay: 3.25, ease: "back.out(1.7)" });
+      gsap.from(".btnwhat", { x: -80, duration: 1.5, opacity: 0, delay: 3.5, ease: "back.out(1.7)" });
       gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
     </script>
   </body>
