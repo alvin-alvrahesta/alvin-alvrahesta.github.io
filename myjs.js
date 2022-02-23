@@ -14,11 +14,14 @@ function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     mybutton.style.display = "block";
     mybutton.style.transition = "0.5s";
-    gototop.style.opacity = "1";
-    gototop.style.transition = "0.5s";
   } else {
     mybutton.style.display = "none";
     mybutton.style.transition = "0.5s";
+  }
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    gototop.style.opacity = "1";
+    gototop.style.transition = "0.5s";
+  } else {
     gototop.style.opacity = "0";
     gototop.style.transition = "0.5s";
   }

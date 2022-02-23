@@ -443,7 +443,7 @@ hr {
   z-index: 9 !important;
   cursor: pointer;
   position: fixed;
-  bottom: 76px;
+  bottom: 145px;
   right: 18px;
   display: none;
   transition: 0.5s;
