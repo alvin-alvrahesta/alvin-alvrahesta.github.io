@@ -2,11 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
+#gototopbox {
+  position: relative;
+  width: 100px;
+}
+
+#gototop {
+  position: absolute;
+  opacity: 0;
+  top: 1rem;
+}
+
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
   /* height: 3000px; */
   overflow-x: hidden;
+  background: #041422;
+  /* background: radial-gradient(circle, rgba(24, 50, 73, 0.8) 0%, rgba(9, 24, 47, 0.8) 100%); */
 }
 
 .text-terang {

@@ -22,7 +22,7 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="icon" href="img/letter-a.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="img/lettera.png" type="image/png" sizes="32x32" />
 
     <!-- My Css -->
     <link rel="stylesheet" href="lightstyle.css" />
@@ -32,7 +32,7 @@
   </head>
   <body oncontextmenu="return false">
     <!-- Navbar -->
-    <nav id="navbar-example2" class="navbar p-0 m-0 py-3 fixed-top navbar-expand-lg navbar-dark bg-gelap">
+    <nav id="navbar-example1" class="navbar p-0 m-0 py-3 fixed-top d-none d-sm-inline navbar-expand-lg navbar-dark bg-gelap">
       <div class="container">
         <a style="font-family: 'Lobster', cursive" class="navbar-brand mb-0 h1 pe-5" href="https://alvin-alvrahesta.github.io"
           ><i class="bi bi-house"></i> Alvin</a
@@ -77,8 +77,61 @@
     </nav>
     <!-- Akhir Navbar -->
 
+    <!-- Navbar -->
+    <nav id="navbar-example2" class="navbar py-3 m-0 fixed-bottom d-inline d-sm-none navbar-expand-lg navbar-dark bg-gelap">
+      <div class="container d-flex">
+        <div class="gototopbox">
+          <div id="gototop" class="text-center float-start">
+            <a onclick="backToTop()" disabled class="nav-link text-terang"><i class="bi bi-arrow-up m-0 p-0 text-terang"></i>&nbsp; Top </a>
+          </div>
+        </div>
+        <div class="text-center ps-5 text-center">
+          <a onclick="galleryClick()" href="#gallery" class="nav-link text-terang"
+            ><i class="bi bi-image-fill m-0 p-0 text-terang"></i>&nbsp;&nbsp;Gallery
+          </a>
+        </div>
+        <button
+          class="navbar-toggler float-start"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="hr-long my-3"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="#home">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="#gallery">Gallery</a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <small class="text-terang align-self-center">Dark Mode &nbsp;</small>
+            <label class="switch mb-4">
+              <input id="checkboxlightmode" type="checkbox" onclick="setLightMode()" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
     <!-- Back to top button -->
-    <div id="btn-back-to-top" class="p-1 rounded-circle">
+    <div id="btn-back-to-top" class="p-1 rounded-circle d-none d-sm-inline">
       <img src="img/up-arrow.png" alt="Icon Arrow Up" width="32px" height="32px" />
     </div>
 
@@ -89,9 +142,9 @@
       <section id="home" class="myheader">
         <div class="container flex-wrap align-items-end">
           <div class="row">
-            <div class="col-lg-6 text-end pt-5 mt-4 pt-lg-2 mt-lg-2 align-self-center order-lg-2 headerkanan">
+            <div class="col-lg-6 text-end pt-3 pt-sm-5 mt-4 pt-lg-2 mt-lg-2 align-self-center order-lg-2 headerkanan">
               <div class="textataskanan">
-                <h2 class="m-0 mt-5 textim text-center text-lg-end">I'm</h2>
+                <h2 class="m-0 mt-sm-5 textim text-center text-lg-end">I'm</h2>
                 <h1 class="fw-bold textnama text-center text-lg-end">A Freelancer</h1>
                 <p class="mt-4 mt-lg-5 fw-normal fs-6 text-center text-terang text-lg-end textket">
                   A lover of technology and the arts, especially on websites including Web Design and Web Development.
@@ -489,6 +542,8 @@
       </div>
     </section>
 
+    <div class="d-inline-block d-sm-none footer" style="width: 100vw; height: 64px; padding: 2px"></div>
+
     <!-- Optional JavaScript; choose one of the two! -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
@@ -506,6 +561,7 @@
     </script>
     <!-- My Javascript -->
     <script src="myjs.js"></script>
+
     <!-- My Javascript -->
     <script src="vanilla-tilt.min.js"></script>
     <script>
@@ -540,6 +596,8 @@
       if (localStorage.getItem("theme") == "light") {
         setLightMode(true);
         document.getElementById("checkboxlightmode").checked = false;
+        document.getElementById("navbar-example1").classList.remove("navbar-dark");
+        document.getElementById("navbar-example1").classList.add("navbar-light");
         document.getElementById("navbar-example2").classList.remove("navbar-dark");
         document.getElementById("navbar-example2").classList.add("navbar-light");
         document.getElementById("imgemail").style.filter = "invert(80%)";
@@ -551,10 +609,14 @@
         let isLight = document.body.classList.toggle("lightmode");
         if (isLight) {
           localStorage.setItem("theme", "light");
+          document.getElementById("navbar-example1").classList.remove("navbar-dark");
+          document.getElementById("navbar-example1").classList.add("navbar-light");
           document.getElementById("navbar-example2").classList.remove("navbar-dark");
           document.getElementById("navbar-example2").classList.add("navbar-light");
           document.getElementById("imgemail").style.filter = "invert(80%)";
         } else {
+          document.getElementById("navbar-example1").classList.remove("navbar-light");
+          document.getElementById("navbar-example1").classList.add("navbar-dark");
           document.getElementById("navbar-example2").classList.remove("navbar-light");
           document.getElementById("navbar-example2").classList.add("navbar-dark");
           document.getElementById("imgemail").style.filter = "invert(0%)";
@@ -565,9 +627,9 @@
 
     <script>
       document.onkeydown = function (e) {
-        if (event.keyCode == 123) {
-          return false;
-        }
+        // if (event.keyCode == 123) {
+        //   return false;
+        // }
         if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
           return false;
         }
@@ -575,9 +637,23 @@
           return false;
         }
         if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          alert("Inspect Element di-Nonaktifkan.");
           return false;
         }
       };
+    </script>
+
+    <script>
+      if (document.addEventListener) {
+        document.addEventListener(
+          "contextmenu",
+          function (e) {
+            alert("Menu di-Nonaktifkan."); //here you draw your own menu
+            e.preventDefault();
+          },
+          false
+        );
+      }
     </script>
   </body>
 </html>

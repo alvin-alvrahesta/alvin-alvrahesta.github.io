@@ -1,22 +1,22 @@
-.lightmode body {
-  background: #ffffffaa !important;
-  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+.lightmode {
+  background: #e6eaee;
 }
 
 .lightmode .myheader {
   background: #ffffffaa !important;
-  background: radial-gradient(circle, #dce4e9bb 0%, #b5bfccbb 100%) !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
   box-shadow: rgb(181, 195, 209) 0px 20px 30px -10px;
 }
 
 .lightmode .headerbox {
   background: #ffffffaa !important;
   background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 20px 50px -10px;
 }
 
 .lightmode .bg-gelap {
   backdrop-filter: blur(15px);
-  background: #e6eceecc !important;
+  background: #eaf3f7aa !important;
   /* background: radial-gradient(circle, rgb(20, 42, 61) 0%, rgba(9, 24, 47, 1) 100%); */
   box-shadow: rgba(3, 16, 27, 0.03) 0px 10px 20px -12px, rgba(0, 1, 2, 0.03) 0px 18px 16px -18px;
 }
@@ -118,16 +118,16 @@
 .lightmode .mycard-porto {
   border-color: #0d4879;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
-  box-shadow: rgba(0, 10, 20, 0.25) 0px 25px 50px -12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(244, 247, 248, 0.5) 100%);
+  box-shadow: rgba(0, 10, 20, 0.23) 0px 25px 50px -12px;
 }
 
 .lightmode .mycard-aboutme {
   border-color: #0d4879;
   border-radius: 20px !important;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
-  box-shadow: rgba(0, 10, 20, 0.25) 0px 25px 50px -12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(244, 247, 248, 0.5) 100%);
+  box-shadow: rgba(0, 10, 20, 0.23) 0px 25px 50px -12px;
 }
 
 .lightmode .text-highlight {
@@ -170,7 +170,7 @@
 
 /* ============= BUTTON SCROLL TO TOP ============== */
 .lightmode #btn-back-to-top {
-  background: rgb(2, 11, 19);
+  background: rgb(19, 19, 19);
   filter: invert(100%);
 }
 
