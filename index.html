@@ -25,15 +25,18 @@
     <link rel="icon" href="img/letter-a.png" type="image/png" sizes="32x32" />
 
     <!-- My Css -->
+    <link rel="stylesheet" href="lightstyle.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Alvin Alvrahesta | Portfolio</title>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <!-- Navbar -->
-    <nav id="navbar-example2" class="navbar p-0 m-0 py-3 fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar-example2" class="navbar p-0 m-0 py-3 fixed-top navbar-expand-lg navbar-dark bg-gelap">
       <div class="container">
-        <a style="font-family: 'Lobster', cursive" class="navbar-brand mb-0 h1 pe-5" href="https://alvin-alvrahesta.github.io">Alvin</a>
+        <a style="font-family: 'Lobster', cursive" class="navbar-brand mb-0 h1 pe-5" href="https://alvin-alvrahesta.github.io"
+          ><i class="bi bi-house"></i> Alvin</a
+        >
 
         <button
           class="navbar-toggler"
@@ -62,6 +65,13 @@
               <a class="nav-link float-end" href="#gallery">Gallery</a>
             </li>
           </ul>
+          <div class="d-flex float-end">
+            <small class="text-terang align-self-center">Dark Mode &nbsp;</small>
+            <label class="switch me-3 me-md-0">
+              <input id="checkboxlightmode" type="checkbox" onclick="setLightMode()" />
+              <span class="slider round"></span>
+            </label>
+          </div>
         </div>
       </div>
     </nav>
@@ -83,7 +93,7 @@
               <div class="textataskanan">
                 <h2 class="m-0 mt-5 textim text-center text-lg-end">I'm</h2>
                 <h1 class="fw-bold textnama text-center text-lg-end">A Freelancer</h1>
-                <p class="mt-4 mt-lg-5 fw-light fs-6 text-center text-white text-lg-end textket">
+                <p class="mt-4 mt-lg-5 fw-normal fs-6 text-center text-terang text-lg-end textket">
                   A lover of technology and the arts, especially on websites including Web Design and Web Development.
                 </p>
               </div>
@@ -105,7 +115,7 @@
                   ><img class="me-1" src="img/whatsapp.png" alt="Icon Linkedin" width="24px" height="24px" /> WhatsApp</a
                 >
                 <a class="btn btn-dark mybtn-contact mt-2 py-2 px-3 ms-1 btnemail" href="mailto:alvin.alvrahesta@gmail.com"
-                  ><img class="me-1" src="img/email.png" alt="Icon Linkedin" width="24px" height="24px" /> Email</a
+                  ><img id="imgemail" class="me-1" src="img/email.png" alt="Icon Linkedin" width="24px" height="24px" /> Email</a
                 >
               </div>
             </div>
@@ -128,9 +138,7 @@
       <div class="portofolio">
         <!-- <section id="portofolio"> -->
         <div class="container py-5 mt-0">
-          <div class="text-center pt-5 h1 lh-base" style="color: #f5ba20">
-            Let's get to know <span class="h1 fw-bold text-nowrap">&nbsp;My Works</span>
-          </div>
+          <div class="text-center pt-5 h1 lh-base text-highlight">Let's get to know <span class="h1 fw-bold text-nowrap">&nbsp;My Works</span></div>
           <div class="d-flex justify-content-center pb-5">
             <hr />
           </div>
@@ -158,10 +166,10 @@
                   />
                 </div>
                 <div class="col-xl-6 mt-4 text-center text-xl-start">
-                  <p class="text-white fs-6 fw-lighter lh-lg">
+                  <p class="text-terang fs-6 fw-normal lh-lg">
                     First, I once made a Custom Boot Animation for a Custom ROM (Nusantara Project Android ROM).
                   </p>
-                  <p class="text-white-50 fs-6 fw-lighter mt-4">Software: Adobe After Effects</p>
+                  <p class="text-terang-50 fs-6 fw-normal mt-4">Software: Adobe After Effects</p>
                   <a class="btn btn-dark mybtn-contact py-2 px-3 mt-4 mb-3" href="https://t.me/NusantaraBootanimation"
                     ><img src="img/telegram.png" alt="Icon Linkedin" width="24px" height="24px" /> See the Animation!</a
                   >
@@ -187,7 +195,7 @@
                         alt="Home Dashboard JVT Inventory Management Web Application"
                         width="100%"
                       />
-                      <small class="text-white-50 fw-lighter">Home / Dashboard Page - JVT Inventory Management Web Application</small><br />
+                      <small class="text-terang-50 fw-normal">Home / Dashboard Page - JVT Inventory Management Web Application</small><br />
                     </div>
                     <div class="col-xl-6 text-center">
                       <img
@@ -198,18 +206,18 @@
                         alt="Detail Hardware JVT Inventory Management Web Application"
                         width="100%"
                       />
-                      <small class="text-white-50 fw-lighter">Detail Hardware Page - JVT Inventory Management Web Application</small><br />
+                      <small class="text-terang-50 fw-normal">Detail Hardware Page - JVT Inventory Management Web Application</small><br />
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-12 d-flex align-items-center">
                   <div class="col-xl-12 mt-3 text-center text-xl-start">
-                    <p class="text-white fs-6 fw-lighter lh-lg">
+                    <p class="text-terang fs-6 fw-normal lh-lg">
                       This is the first internship project I did with one of my college friends. We created a website-based software and hardware
                       management application at PT. Java Valley Technology, Semarang.
                     </p>
-                    <p class="text-white-50 fs-6 fw-lighter mt-4">Framework : Laravel 8</p>
-                    <p class="text-white-50 fs-6 fw-lighter mt-2">UI Framework : Bootstrap 3</p>
+                    <p class="text-terang-50 fs-6 fw-normal mt-4 text-terang">Framework : Laravel 8</p>
+                    <p class="text-terang-50 fs-6 fw-normal mt-2 text-terang">UI Framework : Bootstrap 3</p>
                   </div>
                 </div>
               </div>
@@ -232,7 +240,7 @@
                         alt="Pariwidaring Jateng Screenshot 1"
                         width="100%"
                       />
-                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 1</small><br /></div>
+                      <div><small class="text-terang-50 fw-normal">Pariwidaring Jateng Screenshot 1</small><br /></div>
                     </div>
                     <div class="col-3 text-center p-0">
                       <img
@@ -242,7 +250,7 @@
                         alt="Pariwidaring Jateng Screenshot 2"
                         width="100%"
                       />
-                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 2</small><br /></div>
+                      <div><small class="text-terang-50 fw-normal">Pariwidaring Jateng Screenshot 2</small><br /></div>
                     </div>
                     <div class="col-3 text-center p-0">
                       <img
@@ -252,17 +260,17 @@
                         alt="Pariwidaring Jateng Screenshot 3"
                         width="100%"
                       />
-                      <div><small class="text-white-50 fw-lighter">Pariwidaring Jateng Screenshot 3</small><br /></div>
+                      <div><small class="text-terang-50 fw-normal">Pariwidaring Jateng Screenshot 3</small><br /></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-12 d-flex align-items-center">
                   <div class="col-xl-12 mt-3 text-center text-xl-start">
-                    <p class="text-white fs-6 fw-lighter lh-lg">
+                    <p class="text-terang fs-6 fw-normal lh-lg">
                       I got a project for mobile application design from my friend. I implement UI Design through a design that has been made by my
                       friend.
                     </p>
-                    <p class="text-white-50 fs-6 fw-lighter mt-4">Software : Figma</p>
+                    <p class="text-terang-50 fs-6 fw-normal mt-4">Software : Figma</p>
                   </div>
                 </div>
               </div>
@@ -278,14 +286,14 @@
     <section id="aboutme">
       <div class="aboutme">
         <div class="container py-5 mt-0">
-          <div class="text-center pt-5 h1 lh-base" style="color: #f5ba20">About <span class="h1 fw-bold text-nowrap">&nbsp;Me</span></div>
+          <div class="text-center pt-5 h1 lh-base text-highlight">About <span class="h1 fw-bold text-nowrap">&nbsp;Me</span></div>
           <div class="d-flex justify-content-center pb-5">
             <hr />
           </div>
           <div class="card mycard-aboutme pb-2 px-4" data-aos="flip-left" data-aos-offset="140" data-aos-delay="150">
             <div class="row align-items-center justify-content-evenly">
               <p
-                class="text-white fs-1 fw-lighter text-center"
+                class="text-terang fs-1 fw-normal text-center"
                 style="font-family: 'Lobster', cursive"
                 data-aos="fade-down"
                 data-aos-offset="180"
@@ -295,14 +303,14 @@
               </p>
               <div class="hr-long mx-3"></div>
               <div class="col-md-4 rounded-circle foto-aboutme my-md-3" data-aos="flip-right" data-aos-offset="180" data-aos-delay="500"></div>
-              <div style="text-indent: 3rem; text-align: justify" class="col-md-8 text-white fs-6 fw-lighter lh-lg my-3">
-                My name is <span class="text-warning">Alvin Alvrahesta</span> who is usually called Alvin or Hesta. I was born in
-                <span class="text-warning">Semarang Regency</span> on <span class="text-warning">February 16, 2000</span>. I really like anything
+              <div style="text-indent: 3rem; text-align: justify" class="col-md-8 text-terang fs-6 fw-normal lh-lg my-3">
+                My name is <span class="text-highlight">Alvin Alvrahesta</span> who is usually called Alvin or Hesta. I was born in
+                <span class="text-highlight">Semarang Regency</span> on <span class="text-highlight">February 16, 2000</span>. I really like anything
                 related to art and technology, especially graphic design. Therefore, I plunged into the world of Website Development. In the website
-                there are 2 parts, namely Frontend (<span class="text-warning">UI Design</span>) and Backend (<span class="text-warning"
+                there are 2 parts, namely Frontend (<span class="text-highlight">UI Design</span>) and Backend (<span class="text-highlight"
                   >Database Management</span
-                >), and I like both parts. Since studying at <span class="text-warning">Diponegoro University</span>, I am interested in the
-                <span class="text-warning">Laravel 8</span> and <span class="text-warning">Bootstrap</span> Framework until now.
+                >), and I like both parts. Since studying at <span class="text-highlight">Diponegoro University</span>, I am interested in the
+                <span class="text-highlight">Laravel 8</span> and <span class="text-highlight">Bootstrap</span> Framework until now.
               </div>
             </div>
           </div>
@@ -312,7 +320,7 @@
               <div class="col-12 mt-4">
                 <div class="card mycard-aboutme" data-aos="flip-left" data-aos-offset="130" data-aos-delay="100">
                   <p
-                    class="text-white fs-1 fw-lighter text-center"
+                    class="text-terang fs-1 fw-normal text-center"
                     style="font-family: 'Lobster', cursive"
                     data-aos="fade-down"
                     data-aos-offset="150"
@@ -321,32 +329,32 @@
                     Skills
                   </p>
                   <div class="hr-long mx-3"></div>
-                  <p class="text-warning ms-3 fs-5 mb-2 fw-lighter"># Computer Basic Operations</p>
+                  <p class="text-highlight ms-3 fs-5 mb-2 fw-normal"># Computer Basic Operations</p>
                   <div class="mb-2 ms-3">
-                    <p class="text-white my-1 fw-lighter">- Microsoft Word</p>
-                    <p class="text-white my-1 fw-lighter">- Microsoft Excel</p>
-                    <p class="text-white my-1 fw-lighter">- Microsoft Power Point</p>
+                    <p class="text-terang my-1 fw-normal">- Microsoft Word</p>
+                    <p class="text-terang my-1 fw-normal">- Microsoft Excel</p>
+                    <p class="text-terang my-1 fw-normal">- Microsoft Power Point</p>
                   </div>
-                  <p class="text-warning ms-3 fs-5 mb-2 fw-lighter"># Graphic Design</p>
+                  <p class="text-highlight ms-3 fs-5 mb-2 fw-normal"># Graphic Design</p>
                   <div class="mb-2 ms-3">
-                    <p class="text-white my-1 fw-lighter">- Adobe Photoshop</p>
-                    <p class="text-white my-1 fw-lighter">- Adobe Illustrator</p>
-                    <p class="text-white my-1 fw-lighter">- Figma</p>
-                    <p class="text-white my-1 fw-lighter">- After Effect</p>
+                    <p class="text-terang my-1 fw-normal">- Adobe Photoshop</p>
+                    <p class="text-terang my-1 fw-normal">- Adobe Illustrator</p>
+                    <p class="text-terang my-1 fw-normal">- Figma</p>
+                    <p class="text-terang my-1 fw-normal">- After Effect</p>
                   </div>
-                  <p class="text-warning ms-3 fs-5 mb-2 fw-lighter"># Web Programming</p>
+                  <p class="text-highlight ms-3 fs-5 mb-2 fw-normal"># Web Programming</p>
                   <div class="mb-2 ms-3">
-                    <p class="text-white my-1 fw-lighter">- PHP Language</p>
-                    <p class="text-white my-1 fw-lighter">- MySQL</p>
-                    <p class="text-white my-1 fw-lighter">- HTML</p>
-                    <p class="text-white my-1 fw-lighter">- CSS</p>
+                    <p class="text-terang my-1 fw-normal">- PHP Language</p>
+                    <p class="text-terang my-1 fw-normal">- MySQL</p>
+                    <p class="text-terang my-1 fw-normal">- HTML</p>
+                    <p class="text-terang my-1 fw-normal">- CSS</p>
                   </div>
                 </div>
               </div>
               <div class="col-12 mt-4">
                 <div class="card mycard-aboutme" data-aos="flip-left" data-aos-offset="180" data-aos-delay="300">
                   <p
-                    class="text-white fs-1 fw-lighter text-center"
+                    class="text-terang fs-1 fw-normal text-center"
                     style="font-family: 'Lobster', cursive"
                     data-aos="fade-down"
                     data-aos-offset="140"
@@ -355,19 +363,19 @@
                     Hobbies
                   </p>
                   <div class="hr-long mx-3"></div>
-                  <p class="text-white ms-3 fs-5 fw-lighter">
+                  <p class="text-terang ms-3 fs-5 fw-normal">
                     <img class="me-3" src="img/web-design.png" alt="Icon Web Design" width="36px" height="36px" /> Graphic Design
                   </p>
                   <div class="hr-long mx-3"></div>
-                  <p class="text-white ms-3 fs-5 fw-lighter">
+                  <p class="text-terang ms-3 fs-5 fw-normal">
                     <img class="me-3" src="img/spanish-guitar.png" alt="Icon Music Guitar" width="36px" height="36px" /> Music
                   </p>
                   <div class="hr-long mx-3"></div>
-                  <p class="text-white ms-3 fs-5 fw-lighter">
+                  <p class="text-terang ms-3 fs-5 fw-normal">
                     <img class="me-3" src="img/gamepad.png" alt="Icon Game Pad" width="36px" height="36px" /> Game
                   </p>
                   <div class="hr-long mx-3"></div>
-                  <p class="text-white ms-3 fs-5 fw-lighter">
+                  <p class="text-terang ms-3 fs-5 fw-normal">
                     <img class="me-3" src="img/paint.png" alt="Icon Paint" width="36px" height="36px" /> Drawing
                   </p>
                   <div class="hr-long mx-3"></div>
@@ -378,7 +386,7 @@
             <div class="col-md-8 mt-4 d-flex align-items-stretch">
               <div class="card mycard-aboutme" style="width: 100%" data-aos="flip-left" data-aos-offset="130" data-aos-delay="100">
                 <p
-                  class="text-white fs-1 fw-lighter text-center"
+                  class="text-terang fs-1 fw-normal text-center"
                   style="font-family: 'Lobster', cursive"
                   data-aos="fade-down"
                   data-aos-offset="150"
@@ -388,77 +396,73 @@
                 </p>
                 <div class="hr-long mx-3"></div>
                 <!-- Experiences -->
-                <p class="text-white ms-3 fs-5 fw-bold" data-aos="fade-down" data-aos-delay="300">
+                <p class="text-terang ms-3 fs-5 fw-bold" data-aos="fade-down" data-aos-delay="300">
                   <img class="me-3" src="img/user-experience.png" alt="Icon User Experience" width="36px" height="36px" /> Experiences
                 </p>
                 <div class="hr-long mx-3"></div>
                 <div class="ms-5 ps-4">
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Panitia Smada Campus Expo 2020</p>
-                    <small class="text-white-50 fw-lighter">Sebagai divisi PDD.</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Panitia Smada Campus Expo 2020</p>
+                    <small class="text-terang-50 fw-normal">Sebagai divisi PDD.</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Panitia Siskom Futsal Cup 2019</p>
-                    <small class="text-white-50 fw-lighter">Sebagai divisi LO & Sekretaris.</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Panitia Siskom Futsal Cup 2019</p>
+                    <small class="text-terang-50 fw-normal">Sebagai divisi LO & Sekretaris.</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Peserta LKMM - Pra Dasar</p>
-                    <small class="text-white-50 fw-lighter">Latihan Keterampilan Manajemen Mahasiswa</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Peserta LKMM - Pra Dasar</p>
+                    <small class="text-terang-50 fw-normal">Latihan Keterampilan Manajemen Mahasiswa</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Peserta Lomba OSN Matematika Tingkat SMP</p>
-                    <small class="text-white-50 fw-lighter">Olimpiade Sains Nasional 2013</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Peserta Lomba OSN Matematika Tingkat SMP</p>
+                    <small class="text-terang-50 fw-normal">Olimpiade Sains Nasional 2013</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Peserta Lomba Creadenation Undip</p>
-                    <small class="text-white-50 fw-lighter">Lomba Poster</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Peserta Lomba Creadenation Undip</p>
+                    <small class="text-terang-50 fw-normal">Lomba Poster</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Bootanimation Creator di ROM Nusantara</p>
-                    <small class="text-white-50 fw-lighter">Komunitas Android ROM</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Bootanimation Creator di ROM Nusantara</p>
+                    <small class="text-terang-50 fw-normal">Komunitas Android ROM</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Magang di PT. Java Valley Semarang (2021)</p>
-                    <small class="text-white-50 fw-lighter">Membuat Aplikasi Manajemen Data (Website)</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Magang di PT. Java Valley Semarang (2021)</p>
+                    <small class="text-terang-50 fw-normal">Membuat Aplikasi Manajemen Data (Website)</small>
                   </div>
                 </div>
                 <!-- Organizations -->
                 <div class="hr-long mx-3 mt-3"></div>
-                <p class="text-white ms-3 fs-5 fw-bold" data-aos="fade-down" data-aos-delay="100">
+                <p class="text-terang ms-3 fs-5 fw-bold" data-aos="fade-down" data-aos-delay="100">
                   <img class="me-3" src="img/organization-chart.png" alt="Icon Organization Chart" width="36px" height="36px" /> Organizations
                 </p>
                 <div class="hr-long mx-3"></div>
                 <div class="ms-5 ps-4">
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Anggota Ruang Karya (2019 & 2020)</p>
-                    <small class="text-white-50 fw-lighter">Unit Kegiatan Mahasiswa Ruang Karya Teknik Komputer</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Anggota Ruang Karya (2019 & 2020)</p>
+                    <small class="text-terang-50 fw-normal">Unit Kegiatan Mahasiswa Ruang Karya Teknik Komputer</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Anggota divisi Multimedia CERC (2019 & 2020)</p>
-                    <small class="text-white-50 fw-lighter">Computer Engineering Research Club</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Anggota divisi Multimedia CERC (2019 & 2020)</p>
+                    <small class="text-terang-50 fw-normal">Computer Engineering Research Club</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Staff Sekretaris 2 Himaskom (2019)</p>
-                    <small class="text-white-50 fw-lighter">Himpunan Mahasiswa Teknik Komputer 2019</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Staff Sekretaris 2 Himaskom (2019)</p>
+                    <small class="text-terang-50 fw-normal">Himpunan Mahasiswa Teknik Komputer 2019</small>
                   </div>
                   <div class="mb-3">
-                    <p class="text-white fs-6 mb-0 fw-lighter">Fungsio Sekretaris 1 Himaskom (2020)</p>
-                    <small class="text-white-50 fw-lighter">Himpunan Mahasiswa Teknik Komputer 2020</small>
+                    <p class="text-terang fs-6 mb-0 fw-normal">Fungsio Sekretaris 1 Himaskom (2020)</p>
+                    <small class="text-terang-50 fw-normal">Himpunan Mahasiswa Teknik Komputer 2020</small>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Akhir Experiences -->
           </div>
-          <!-- <div class="text-center h1 lh-base" style="color: #f5ba20">Cooming Soon!</div> -->
-          <!-- <a class="btn btn-dark mybtn-contact py-2 px-3 mt-4 mb-3" href="gallery.html"
-            ><img src="img/telegram.png" alt="Icon Linkedin" width="24px" height="24px" /> See My Gallery!</a
-          > -->
         </div>
-        <p class="text-white fs-6 fw-lighter text-center mx-5" style="font-style: italic">
+        <p class="text-terang fs-6 fw-normal text-center mx-5" style="font-style: italic">
           ” If your business is not on the internet, then your business will be out of business ”
         </p>
-        <p class="text-white-50 fs-6 fw-lighter text-center pb-5">~ Bill Gates ~</p>
+        <p class="text-terang-50 fs-6 fw-normal text-center pb-5 mb-0">~ Bill Gates ~</p>
       </div>
     </section>
     <!-- Akhir About Me -->
@@ -466,18 +470,13 @@
     <section id="gallery">
       <div class="gallery">
         <div class="container py-5 mt-0">
-          <div class="text-center pt-5 h1 lh-base" style="color: #f5ba20">Check <span class="h1 fw-bold text-nowrap">&nbsp;My Gallery</span></div>
+          <div class="text-center pt-5 h1 lh-base text-highlight">Check <span class="h1 fw-bold text-nowrap">&nbsp;My Gallery</span></div>
           <div class="d-flex justify-content-center">
             <hr />
           </div>
           <div class="d-flex justify-content-center mb-5">
-            <a
-              class="btn btn-dark mybtn-contact py-2 px-3 mt-4 mb-3"
-              href="gallery.html"
-              data-aos="fade-down"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-delay="400"
-              ><img class="me-2" src="img/image-gallery.png" alt="Icon Linkedin" width="24px" height="24px" />Open Gallery</a
+            <a class="btn btn-dark mybtn-contact py-2 px-3 mt-4 mb-3" href="gallery.html"
+              ><img class="me-2" src="img/image-gallery.png" alt="Icon Gallery" width="24px" height="24px" />Open Gallery</a
             >
           </div>
         </div>
@@ -486,7 +485,7 @@
 
     <section id="footer">
       <div class="footer" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-        <p class="text-center text-white fw-lighter p-4 m-0">Created with <i class="bi bi-heart-fill text-danger"></i> by Alvin Alvrahesta</p>
+        <p class="text-center text-terang fw-normal p-4 m-0">Created with <i class="bi bi-heart-fill"></i> by Alvin Alvrahesta</p>
       </div>
     </section>
 
@@ -535,6 +534,50 @@
       gsap.from(".btnemail", { x: -80, duration: 1.5, opacity: 0, delay: 3.25, ease: "back.out(1.7)" });
       gsap.from(".btnwhat", { x: -80, duration: 1.5, opacity: 0, delay: 3.5, ease: "back.out(1.7)" });
       gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
+    </script>
+
+    <script>
+      if (localStorage.getItem("theme") == "light") {
+        setLightMode(true);
+        document.getElementById("checkboxlightmode").checked = false;
+        document.getElementById("navbar-example2").classList.remove("navbar-dark");
+        document.getElementById("navbar-example2").classList.add("navbar-light");
+        document.getElementById("imgemail").style.filter = "invert(80%)";
+      } else {
+        document.getElementById("checkboxlightmode").checked = true;
+      }
+
+      function setLightMode() {
+        let isLight = document.body.classList.toggle("lightmode");
+        if (isLight) {
+          localStorage.setItem("theme", "light");
+          document.getElementById("navbar-example2").classList.remove("navbar-dark");
+          document.getElementById("navbar-example2").classList.add("navbar-light");
+          document.getElementById("imgemail").style.filter = "invert(80%)";
+        } else {
+          document.getElementById("navbar-example2").classList.remove("navbar-light");
+          document.getElementById("navbar-example2").classList.add("navbar-dark");
+          document.getElementById("imgemail").style.filter = "invert(0%)";
+          localStorage.removeItem("theme");
+        }
+      }
+    </script>
+
+    <script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+      };
     </script>
   </body>
 </html>
