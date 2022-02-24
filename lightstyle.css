@@ -4,21 +4,20 @@
 
 .lightmode .myheader {
   background: #ffffffaa !important;
-  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+  background: radial-gradient(circle, #edf0f3bb 0%, #e1e7f0bb 100%) !important;
   box-shadow: rgb(181, 195, 209) 0px 20px 30px -10px;
 }
 
 .lightmode .headerbox {
   background: #ffffffaa !important;
-  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 20px 50px -10px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 20px 50px -10px;
 }
 
 .lightmode .bg-gelap {
   backdrop-filter: blur(15px);
   background: #eaf3f7aa !important;
   /* background: radial-gradient(circle, rgb(20, 42, 61) 0%, rgba(9, 24, 47, 1) 100%); */
-  box-shadow: rgba(3, 16, 27, 0.03) 0px 10px 20px -12px, rgba(0, 1, 2, 0.03) 0px 18px 16px -18px;
+  box-shadow: rgba(3, 16, 27, 0.03) 0px 0px 10px, rgba(0, 1, 2, 0.03) 0px 0px 16px;
 }
 
 .lightmode .textim {
