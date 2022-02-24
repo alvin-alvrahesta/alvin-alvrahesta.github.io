@@ -575,6 +575,11 @@
       });
     </script>
 
+    <script>
+      $(document).ready(function () {
+        $(this).scrollTop(0);
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <script>
@@ -584,12 +589,12 @@
       // gsap.from(".textket", { duration: 2, opacity: 0, y: -100, delay: 1 });
       // gsap.from(".textket", { x: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
       // gsap.from(".textnama", { delay: 1, x: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
-      gsap.from(".textataskanan", { delay: 1, x: -80, duration: 1, opacity: 0, ease: "Power2.easeOut" });
-      gsap.from(".btnlink", { x: -80, duration: 1, opacity: 0, delay: 2, ease: "Power2.easeOut" });
-      gsap.from(".btnins", { x: -80, duration: 1, opacity: 0, delay: 2.25, ease: "Power2.easeOut" });
-      gsap.from(".btndrib", { x: -80, duration: 1, opacity: 0, delay: 2.5, ease: "Power2.easeOut" });
-      gsap.from(".btnemail", { x: -80, duration: 1, opacity: 0, delay: 2.75, ease: "Power2.easeOut" });
-      gsap.from(".btnwhat", { x: -80, duration: 1, opacity: 0, delay: 3, ease: "Power2.easeOut" });
+      gsap.from(".textataskanan", { delay: 1, x: -20, duration: 1, opacity: 0, ease: "Power2.easeOut" });
+      gsap.from(".btnlink", { x: -20, duration: 0.5, opacity: 0, delay: 2, ease: "Power2.easeOut" });
+      gsap.from(".btnins", { x: -20, duration: 0.5, opacity: 0, delay: 2.25, ease: "Power2.easeOut" });
+      gsap.from(".btndrib", { x: -20, duration: 0.5, opacity: 0, delay: 2.5, ease: "Power2.easeOut" });
+      gsap.from(".btnemail", { x: -20, duration: 0.5, opacity: 0, delay: 2.75, ease: "Power2.easeOut" });
+      gsap.from(".btnwhat", { x: -20, duration: 0.5, opacity: 0, delay: 3, ease: "Power2.easeOut" });
       gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
     </script>
 

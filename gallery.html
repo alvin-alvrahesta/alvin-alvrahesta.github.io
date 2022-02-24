@@ -460,6 +460,12 @@
     </script>
 
     <script>
+      $(document).ready(function () {
+        $(this).scrollTop(0);
+      });
+    </script>
+
+    <script>
       if (localStorage.getItem("theme") == "light") {
         setLightMode(true);
         document.getElementById("checkboxlightmode3").checked = false;
