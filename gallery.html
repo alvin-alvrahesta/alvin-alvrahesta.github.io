@@ -30,7 +30,7 @@
 
     <title>Alvin Alvrahesta | Portfolio</title>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <!-- Navbar -->
     <nav id="navbar-example1" class="navbar py-3 d-none d-sm-inline fixed-top navbar-dark bg-gelap">
       <div class="container">
@@ -489,6 +489,37 @@
           document.getElementById("navbar-example2").classList.add("navbar-dark");
           localStorage.removeItem("theme");
         }
+      }
+    </script>
+
+    <script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          alert("Inspect Element di-Nonaktifkan.");
+          return false;
+        }
+      };
+    </script>
+
+    <script>
+      if (document.addEventListener) {
+        document.addEventListener(
+          "contextmenu",
+          function (e) {
+            alert("Menu di-Nonaktifkan."); //here you draw your own menu
+            e.preventDefault();
+          },
+          false
+        );
       }
     </script>
   </body>
