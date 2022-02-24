@@ -119,7 +119,7 @@
           <div class="text-center">
             <small class="text-terang align-self-center">Dark Mode &nbsp;</small>
             <label class="switch mb-4">
-              <input id="checkboxlightmode" type="checkbox" onclick="setLightMode()" />
+              <input id="checkboxlightmode2" type="checkbox" onclick="setLightMode()" />
               <span class="slider round"></span>
             </label>
           </div>
@@ -594,6 +594,7 @@
       if (localStorage.getItem("theme") == "light") {
         setLightMode(true);
         document.getElementById("checkboxlightmode").checked = false;
+        document.getElementById("checkboxlightmode2").checked = false;
         document.getElementById("navbar-example1").classList.remove("navbar-dark");
         document.getElementById("navbar-example1").classList.add("navbar-light");
         document.getElementById("navbar-example2").classList.remove("navbar-dark");
@@ -601,6 +602,7 @@
         document.getElementById("imgemail").style.filter = "invert(80%)";
       } else {
         document.getElementById("checkboxlightmode").checked = true;
+        document.getElementById("checkboxlightmode2").checked = true;
       }
 
       function setLightMode() {
