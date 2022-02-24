@@ -431,7 +431,12 @@
       // // gsap.from(".gal", { y: -200, duration: 1, opacity: 0, delay: 0.5 });
       // gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
     </script>
-
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
     <script>
       //Get the button
       let mybutton = document.getElementById("btn-back-to-top");
@@ -460,10 +465,8 @@
     </script>
 
     <script>
-      history.scrollRestoration = "manual";
-
-      $(window).on("beforeunload", function () {
-        $(window).scrollTop(0);
+      $(document).ready(function () {
+        $(this).scrollTop(0);
       });
     </script>
 
