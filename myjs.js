@@ -21,7 +21,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
     mybutton.style.transition = "0.5s";
   }
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     gototop.style.opacity = "1";
     gototop.style.transition = "0.5s";
   } else {
