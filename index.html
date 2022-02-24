@@ -50,22 +50,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse py-2 py-lg-0" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item px-3">
+            <li class="nav-item py-2 py-lg-0 pe-0 pe-lg-3">
               <a class="nav-link float-end" href="#home">Home</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item py-2 py-lg-0 pe-0 pe-lg-3">
               <a class="nav-link float-end" href="#portfolio">Portfolio</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item py-2 py-lg-0 pe-0 pe-lg-3">
               <a class="nav-link float-end" href="#aboutme">About Me</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item py-2 py-lg-0 pe-0 pe-lg-3">
               <a class="nav-link float-end" href="#gallery">Gallery</a>
             </li>
           </ul>
-          <div class="d-flex float-end">
+          <div class="d-flex py-2 py-lg-0 float-end">
             <small class="text-terang align-self-center">Dark Mode &nbsp;</small>
             <label class="switch me-3 me-md-0">
               <input id="checkboxlightmode" type="checkbox" onclick="setLightMode()" />
@@ -77,13 +77,13 @@
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Navbar -->
+    <!-- Navbar Bottom -->
     <nav id="navbar-example2" class="navbar py-3 m-0 fixed-bottom d-inline d-sm-none navbar-expand-lg navbar-dark bg-gelap">
       <div class="container d-flex">
         <div id="gototop">
           <a onclick="backToTop()" disabled class="nav-link text-terang"><i class="bi bi-arrow-up m-0 p-0 text-terang"></i>&nbsp; Top </a>
         </div>
-        <div class="text-center pe-4 text-center">
+        <div class="text-center pe-4 me-1 text-center">
           <a onclick="galleryClick()" href="#gallery" class="nav-link text-terang"
             ><i class="bi bi-image-fill m-0 p-0 text-terang"></i>&nbsp;&nbsp;Gallery
           </a>
@@ -111,9 +111,6 @@
             </li>
             <li class="nav-item px-3">
               <a class="nav-link text-center" href="#aboutme">About Me</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-center" href="#gallery">Gallery</a>
             </li>
           </ul>
           <div class="text-center">
@@ -510,10 +507,6 @@
             <!-- Akhir Experiences -->
           </div>
         </div>
-        <p class="text-terang fs-6 fw-normal text-center mx-5" style="font-style: italic">
-          ” If your business is not on the internet, then your business will be out of business ”
-        </p>
-        <p class="text-terang-50 fs-6 fw-normal text-center pb-5 mb-0">~ Bill Gates ~</p>
       </div>
     </section>
     <!-- Akhir About Me -->
@@ -531,6 +524,10 @@
             >
           </div>
         </div>
+        <p class="text-terang fs-6 fw-normal text-center mx-5" style="font-style: italic">
+          ” If your business is not on the internet, then your business will be out of business ”
+        </p>
+        <p class="text-terang-50 fs-6 fw-normal text-center pb-5 mb-0">~ Bill Gates ~</p>
       </div>
     </section>
 
@@ -546,6 +543,12 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
       crossorigin="anonymous"
     ></script>
 
@@ -627,9 +630,9 @@
 
     <script>
       document.onkeydown = function (e) {
-        // if (event.keyCode == 123) {
-        //   return false;
-        // }
+        if (event.keyCode == 123) {
+          return false;
+        }
         if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
           return false;
         }
@@ -654,6 +657,29 @@
           false
         );
       }
+    </script>
+
+    <script>
+      // $(window).click(function (event) {
+      //   var clickover = $(event.target);
+      //   var $navbar = $(".navbar-collapse");
+      //   var _opened = $navbar.hasClass("show");
+      //   if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+      //     $("button.navbar-toggler").click();
+      //   }
+      // });
+
+      $(window).click(function () {
+        var $navbar = $(".navbar-collapse");
+        var _opened = $navbar.hasClass("show");
+        if (_opened === true) {
+          $("button.navbar-toggler").click();
+        }
+      });
+
+      $(".navbar").click(function (event) {
+        event.stopPropagation();
+      });
     </script>
   </body>
 </html>
