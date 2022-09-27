@@ -33,7 +33,7 @@ body {
 .myheader {
   z-index: 20;
   backdrop-filter: blur(100px);
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   background: #183249aa;
@@ -60,10 +60,10 @@ body {
   left: -10%;
   top: 0px;
   position: absolute;
-  -webkit-animation: circle 4s infinite;
+  /* -webkit-animation: circle 4s infinite;
   animation: circle 15s infinite;
-  animation-delay: 5s;
-  opacity: 0.5;
+  animation-delay: 5s; */
+  opacity: 0.2;
 }
 
 .circle2 {
@@ -73,17 +73,17 @@ body {
   /* border: 2px solid #ff7600; */
   background-color: #0fc7be;
   left: 50%;
-  top: 80%;
+  top: 0%;
   position: absolute;
-  -webkit-animation: circle2 4s infinite;
+  -webkit-animation: circle2 ease-in-out 10s infinite;
   animation: circle2 ease-in-out 10s infinite;
-  animation-delay: 5s;
-  opacity: 0.5;
+  animation-delay: 0s;
+  opacity: 1;
 }
 
 @-webkit-keyframes circle {
   0% {
-    opacity: 0.5;
+    opacity: 1;
     left: -10%;
     top: 0px;
   }
@@ -103,16 +103,16 @@ body {
     top: 60%;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
     left: -10%;
     top: 0px;
   }
 }
 @-webkit-keyframes circle2 {
   0% {
-    opacity: 0.5;
+    opacity: 1;
     left: 50%;
-    top: 80%;
+    top: 0%;
   }
   25% {
     opacity: 1;
@@ -130,9 +130,9 @@ body {
     top: 10%;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
     left: 50%;
-    top: 80%;
+    top: 0%;
   }
 }
 

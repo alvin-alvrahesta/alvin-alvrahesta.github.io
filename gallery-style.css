@@ -28,7 +28,7 @@
 .gallery1 {
   height: 80%;
   background-image: url("img/gallery/header/ben-griffiths-gAe1pHGc6ms-unsplash.jpg");
-  animation: height1 25s ease-in-out infinite;
+  animation: height1 18s ease-in-out infinite;
 }
 
 @keyframes height1 {
@@ -51,7 +51,7 @@
 .gallery2 {
   height: 770%;
   background-image: url("img/gallery/header/austin-poon-JO_S6ewBqAk-unsplash.jpg");
-  animation: height2 25s ease-in-out infinite;
+  animation: height2 18s ease-in-out infinite;
 }
 
 @keyframes height2 {
@@ -74,7 +74,7 @@
 .gallery3 {
   height: 30%;
   background-image: url("img/gallery/header/nick-fewings-0y_DB18swVc-unsplash.jpg");
-  animation: height3 25s ease-in-out infinite;
+  animation: height3 18s ease-in-out infinite;
 }
 @keyframes height3 {
   0% {
@@ -96,7 +96,7 @@
 .gallery4 {
   height: 90%;
   background-image: url("img/gallery/header/roman-synkevych-vXInUOv1n84-unsplash.jpg");
-  animation: height4 25s ease-in-out infinite;
+  animation: height4 18s ease-in-out infinite;
 }
 @keyframes height4 {
   0% {
@@ -118,7 +118,7 @@
 .gallery5 {
   height: 60%;
   background-image: url("img/gallery/header/simon-noh-0rmby-3OTeI-unsplash.jpg");
-  animation: height5 25s ease-in-out infinite;
+  animation: height5 18s ease-in-out infinite;
 }
 @keyframes height5 {
   0% {
