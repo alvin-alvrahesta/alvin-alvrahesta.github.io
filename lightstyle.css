@@ -138,7 +138,7 @@
 }
 
 .lightmode .foto-aboutme {
-  background: rgba(138, 177, 209, 0.18);
+  /* background: rgba(138, 177, 209, 0.18); */
   background-image: url("img/foto.png");
   background-size: cover;
 }
