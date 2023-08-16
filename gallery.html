@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="icon" href="img/letter-a.png" type="image/png" sizes="32x32" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="lightgallery-style.css" />
+    <link rel="stylesheet" href="gallery-style.css" />
+
+    <title>Alvin Alvrahesta | Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar-example1" class="navbar py-3 d-none d-sm-inline fixed-top navbar-dark bg-gelap">
+      <div class="container">
+        <li class="nav-item">
+          <a class="nav-link text-center text-terang fs-6 fw-light" href="../"><i class="bi bi-arrow-left"></i> Back to Home</a>
+        </li>
+        <a class="nav-link disabled text-terang text-center fs-6 fw-light"><i class="bi bi-image-fill"></i> &nbsp;My Gallery</a>
+        <div class="text-center d-flex align-items-center">
+          <small class="text-terang align-self-center">Dark Mode &nbsp;</small>
+          <label class="switch">
+            <input id="checkboxlightmode3" type="checkbox" onclick="setLightMode()" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- <ul class="navbar-nav"> -->
+        <!-- </ul> -->
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Navbar -->
+    <nav id="navbar-example2" class="navbar py-3 m-0 fixed-bottom d-inline d-sm-none navbar-expand-lg navbar-dark bg-gelap">
+      <div class="container d-flex">
+        <div class="nav-item">
+          <a class="nav-link text-terang fw-normal" href="../"><i class="bi text-terang bi-arrow-left"></i> Back</a>
+        </div>
+        <div class="text-center pe-4 text-center">
+          <a class="nav-link disabled text-terang-50 fw-normal"><i class="bi bi-image-fill"></i> &nbsp;My Gallery</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="hr-long my-3 mb-4"></div>
+          <div class="nav-item d-flex align-items-center justify-content-center mb-2">
+            <small class="text-terang fs-6 align-self-center">Dark Mode &nbsp;</small>
+            <label class="switch">
+              <input id="checkboxlightmode4" type="checkbox" onclick="setLightMode()" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Back to top button -->
+    <div id="btn-back-to-top" class="p-1 rounded-circle">
+      <img src="img/up-arrow.png" alt="Icon Arrow Up" width="32px" height="32px" />
+    </div>
+
+    <!-- Header -->
+    <section id="home" class="myheader">
+      <div class="container align-items-center">
+        <div class="row align-items-center mt-0 mt-sm-5 pt-4 pt-sm-5">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <ul class="d-flex">
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="100">G</div>
+                  </li>
+                  <li class="">
+                    <input type="checkbox" checked />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="100">A</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="d-flex">
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="300">L</div>
+                  </li>
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="500">L</div>
+                  </li>
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="700">E</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="d-flex mb-lg-5 mb-0">
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="1100">R</div>
+                  </li>
+                  <li class="">
+                    <input type="checkbox" />
+                    <div class="gallery-text fw-bolder" data-aos="zoom-out" data-aos-delay="1300">Y</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 galheader d-flex justify-content-evenly align-items-lg-center align-items-end">
+            <div class="gal gallery1 mb-lg-0" data-aos="fade-down" data-aos-delay="100" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery2 mb-lg-0" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery3 mb-lg-0" data-aos="fade-down" data-aos-delay="500" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery4 mb-lg-0" data-aos="fade-down" data-aos-delay="700" data-aos-anchor=".gallery1"></div>
+            <div class="gal gallery5 mb-lg-0" data-aos="fade-down" data-aos-delay="900" data-aos-anchor=".gallery1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Header -->
+
+    <!-- Karya -->
+    <section id="karya">
+      <div class="karya">
+        <div class="container">
+          <div class="container py-5 mt-0">
+            <div class="text-center pt-5 text-highlight h1 lh-base">My Creation <span class="h1 fw-bold text-nowrap">Photos & Videos</span></div>
+            <div class="d-flex justify-content-center">
+              <hr />
+            </div>
+            <div class="text-terang text-center d-flex justify-content-center">
+              <p>Click the picture to see HD and more.</p>
+            </div>
+          </div>
+          <!-- Photo Grid -->
+          <div class="row-gallery px-1 pb-5">
+            <div class="column-gallery">
+              <div
+                src="img/gallery/gallery-compressed/Bootanimation V6.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Bootanimation V6.mp4"
+                data-gallery="bootanimation-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Bootanimation V6 for Nusantara ROM - Android Operationg System</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                src="img/gallery/gallery-compressed/Bootanimation V7.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Bootanimation V7.mp4"
+                data-gallery="bootanimation-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Bootanimation V7 for Nusantara ROM - Android Operationg System</p>"
+                style="width: 100%"
+              ></div>
+              <div class="info-top">
+                <img
+                  src="img/gallery/gallery-compressed/Bootanimation V8.png"
+                  data-toggle="lightbox"
+                  data-remote="/img/gallery/gallery-asli/Bootanimation V8.mp4"
+                  data-gallery="bootanimation-gallery"
+                  data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Bootanimation V8 for Nusantara ROM - Android Operationg System</p>"
+                  style="width: 100%"
+                />
+                <i class="text-white fs-2 bi bi-play-circle-fill"><i class="text-white fs-2 bi bi-images me-4" style="top: 0px"></i></i>
+              </div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/JVT Inventory1.png"
+                data-gallery="jvtinventory-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Web Application with Laravel - Inventory Management System for Java Valley Technology Semarang - 1</p>"
+                style="width: 100%"
+              ></div>
+              <div class="info-top">
+                <img
+                  src="img/gallery/gallery-compressed/JVT Inventory2.png"
+                  data-toggle="lightbox"
+                  data-remote="/img/gallery/gallery-asli/JVT Inventory2.png"
+                  data-gallery="jvtinventory-gallery"
+                  data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Web Application with Laravel- Inventory Management System for Java Valley Technology Semarang - 2</p>"
+                  style="width: 100%"
+                />
+                <i class="text-dark fs-2 bi bi-images"></i>
+              </div>
+
+              <img
+                src="img/gallery/gallery-compressed/Wallpaper Nusantara.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Wallpaper Nusantara.png"
+                data-gallery="wallpapernusa-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain Wallpaper Nusantara with Illustrator - for Android Operating System</p>"
+                style="width: 100%"
+              />
+            </div>
+            <div class="column-gallery">
+              <img
+                src="img/gallery/gallery-compressed/Logo The ACE.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Logo The Ace.png"
+                data-gallery="theace-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain Logo The Aniversary Computer Engineering Event</p>"
+                style="width: 100%"
+              />
+              <div class="info-top">
+                <img
+                  src="img/gallery/gallery-compressed/MathMonopoly1.png"
+                  data-toggle="lightbox"
+                  data-remote="/img/gallery/gallery-asli/MathMonopoly1.png"
+                  data-gallery="mathmonopoly-gallery"
+                  data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Math on Monopoly App 1</p>"
+                  style="width: 100%"
+                /><i class="text-white fs-2 bi bi-images"></i>
+              </div>
+              <!-- <img
+                src="img/gallery/gallery-compressed/devi1.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/devi1.jpg"
+                data-gallery="vector-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain Vector with Photoshop</p>"
+                style="width: 100%"
+              /> -->
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/MathMonopoly2.png"
+                data-gallery="mathmonopoly-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Math on Monopoly App 2</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/MathMonopoly3.png"
+                data-gallery="mathmonopoly-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Math on Monopoly App 3</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/MathMonopoly4.png"
+                data-gallery="mathmonopoly-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Math on Monopoly App 4</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/MathMonopoly5.png"
+                data-gallery="mathmonopoly-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Math on Monopoly App 5</p>"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div class="column-gallery">
+              <div class="info-top">
+                <img
+                  src="img/gallery/gallery-compressed/Pariwidaring6.png"
+                  data-toggle="lightbox"
+                  data-remote="/img/gallery/gallery-asli/Pariwidaring6.png"
+                  data-gallery="pariwidaring-gallery"
+                  data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 6</p>"
+                  style="width: 100%"
+                /><i class="text-dark fs-2 bi bi-images"></i>
+              </div>
+              <!-- <img
+                src="img/gallery/gallery-compressed/vina1.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/vina1.png"
+                data-gallery="vector-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain Vector with Photoshop</p>"
+                style="width: 100%"
+              /> -->
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Pariwidaring1.png"
+                data-gallery="pariwidaring-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 1</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Pariwidaring2.png"
+                data-gallery="pariwidaring-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 2</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Pariwidaring4.png"
+                data-gallery="pariwidaring-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 4</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Pariwidaring5.png"
+                data-gallery="pariwidaring-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 5</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Pariwidaring7.png"
+                data-gallery="pariwidaring-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Pariwidaring Jateng App 7</p>"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div class="column-gallery">
+              <img
+                src="img/gallery/gallery-compressed/Foto Manipulation1.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Foto Manipulation1.jpg"
+                data-gallery="manipulation-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Manipulation Photo with Photoshop- Fake Helicopter</p>"
+                style="width: 100%"
+              />
+              <div class="info-top">
+                <img
+                  src="img/gallery/gallery-compressed/Zenlingo1.png"
+                  data-toggle="lightbox"
+                  data-remote="/img/gallery/gallery-asli/Zenlingo1.png"
+                  data-gallery="zenlingo-gallery"
+                  data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Zenlingo App 1</p>"
+                  style="width: 100%"
+                /><i class="text-dark fs-2 bi bi-images"></i>
+              </div>
+              <!-- <img
+                src="img/gallery/gallery-compressed/aldila1.png"
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/aldila1.jpg"
+                data-gallery="vector-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain Vector with Corel Draw</p>"
+                style="width: 100%"
+              /> -->
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Zenlingo2.png"
+                data-gallery="zenlingo-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Zenlingo App 2</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Zenlingo3.png"
+                data-gallery="zenlingo-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Zenlingo App 3</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Zenlingo4.png"
+                data-gallery="zenlingo-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Zenlingo App 4</p>"
+                style="width: 100%"
+              ></div>
+              <div
+                data-toggle="lightbox"
+                data-remote="/img/gallery/gallery-asli/Zenlingo5.png"
+                data-gallery="zenlingo-gallery"
+                data-footer="<p class='fw-lighter text-white text-center text-decoration-none bg-black p-3'>Desain UI Zenlingo App 5</p>"
+                style="width: 100%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+        <p class="text-center text-terang fw-normal p-4 m-0">Created with <i class="bi bi-heart-fill"></i> by Alvin Alvrahesta</p>
+      </div>
+    </section>
+    <div class="d-inline-block d-sm-none footer" style="width: 100vw; height: 64px; padding: 2px"></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1800,
+        once: true,
+      });
+    </script>
+
+    <!-- My Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.8/dist/index.bundle.min.js"></script>
+    <script>
+      // gsap.registerPlugin(TextPlugin);
+      // // gsap.from("nav", { duration: 2, y: -200 });
+      // // gsap.from(".fotoku", { duration: 2.5, opacity: 0, delay: 0.5 });
+      // // gsap.from(".textket", { duration: 2, opacity: 0, y: -100, delay: 1 });
+      // gsap.from(".textket", { y: -200, duration: 2, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+      // gsap.from(".textnama", { delay: 1, y: -200, duration: 1.7, opacity: 0, ease: "back.out(1.7)" });
+      // gsap.from(".textim", { delay: 1, y: -200, duration: 1.4, opacity: 0, ease: "back.out(1.7)" });
+      // // gsap.from(".gal", { y: -200, duration: 1, opacity: 0, delay: 0.5 });
+      // gsap.to(".textnama", { delay: 7, duration: 3, text: "Alvin Alvrahesta" });
+    </script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+          mybutton.style.transition = "0.5s";
+        } else {
+          mybutton.style.display = "none";
+          mybutton.style.transition = "0.5s";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(this).scrollTop(0);
+      });
+    </script>
+
+    <script>
+      if (localStorage.getItem("theme") == "light") {
+        setLightMode(true);
+        document.getElementById("checkboxlightmode3").checked = false;
+        document.getElementById("checkboxlightmode4").checked = false;
+        document.getElementById("navbar-example1").classList.remove("navbar-dark");
+        document.getElementById("navbar-example1").classList.add("navbar-light");
+        document.getElementById("navbar-example2").classList.remove("navbar-dark");
+        document.getElementById("navbar-example2").classList.add("navbar-light");
+        document.getElementById("imgemail").style.filter = "invert(80%)";
+      } else {
+        document.getElementById("checkboxlightmode3").checked = true;
+        document.getElementById("checkboxlightmode4").checked = true;
+      }
+
+      function setLightMode() {
+        let isLight = document.body.classList.toggle("lightmode");
+        if (isLight) {
+          localStorage.setItem("theme", "light");
+          document.getElementById("navbar-example1").classList.remove("navbar-dark");
+          document.getElementById("navbar-example1").classList.add("navbar-light");
+          document.getElementById("navbar-example2").classList.remove("navbar-dark");
+          document.getElementById("navbar-example2").classList.add("navbar-light");
+        } else {
+          document.getElementById("navbar-example1").classList.remove("navbar-light");
+          document.getElementById("navbar-example1").classList.add("navbar-dark");
+          document.getElementById("navbar-example2").classList.remove("navbar-light");
+          document.getElementById("navbar-example2").classList.add("navbar-dark");
+          localStorage.removeItem("theme");
+        }
+      }
+    </script>
+  </body>
+</html>

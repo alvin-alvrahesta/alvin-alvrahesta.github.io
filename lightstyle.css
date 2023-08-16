@@ -1,0 +1,192 @@
+.lightmode {
+  background: #e6eaee;
+}
+
+.lightmode .myheader {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #edf0f3bb 0%, #e1e7f0bb 100%) !important;
+  box-shadow: rgb(181, 195, 209) 0px 20px 30px -10px;
+}
+
+.lightmode .headerbox {
+  background: #ffffffaa !important;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 20px 50px -10px;
+}
+
+.lightmode .bg-gelap {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  background: #eaf3f7aa !important;
+  /* background: radial-gradient(circle, rgb(20, 42, 61) 0%, rgba(9, 24, 47, 1) 100%); */
+  box-shadow: rgba(3, 16, 27, 0.03) 0px 0px 10px, rgba(0, 1, 2, 0.03) 0px 0px 16px;
+}
+
+.lightmode .textim {
+  color: #32353a;
+  font-weight: 400;
+  font-size: 26pt;
+}
+.lightmode .textnama {
+  color: #151520;
+  font-weight: 600;
+  font-size: 30pt;
+}
+
+.lightmode .text-terang {
+  color: #151520;
+}
+
+.lightmode .text-terang-50 {
+  color: #293441;
+}
+
+.lightmode .text-white {
+  color: #151520 !important;
+}
+
+.lightmode .text-light {
+  color: #151520 !important;
+}
+
+.lightmode .mybtn-contact {
+  background-color: #ffffff56;
+  border: none;
+}
+.lightmode a {
+  color: #151520 !important;
+}
+.lightmode .active {
+  font-weight: 700;
+  /* color: #0d4879  !important; */
+}
+.lightmode a:hover,
+.lightmode a:focus {
+  color: #0d4879 !important;
+}
+
+.lightmode .btn {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 20px -12px;
+  padding: 13px 16px !important;
+  transition: 0.3s;
+}
+.lightmode .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
+  color: #0d4879;
+  transform: translateY(-3px) !important;
+}
+
+.lightmode .portofolio {
+  width: 100vw;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+}
+
+.lightmode .aboutme {
+  height: 100%;
+  width: 100vw;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+}
+
+.lightmode .gallery {
+  width: 100vw;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+}
+
+.lightmode .footer {
+  width: 100vw;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e8eff1cc 0%, #c1cddfcc 100%) !important;
+}
+
+.lightmode hr {
+  opacity: 1;
+  color: #0d4879;
+  background-color: #0d4879;
+}
+.lightmode .hr-long {
+  opacity: 0.35;
+  color: #0e2e3f;
+  background-color: #0e2e3f;
+}
+
+.lightmode .text-white {
+  color: #fbfbfb !important;
+}
+
+.lightmode .mycard-porto {
+  border-color: #0d4879;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(244, 247, 248, 0.5) 100%);
+  box-shadow: rgba(0, 10, 20, 0.23) 0px 25px 50px -12px;
+}
+
+.lightmode .mycard-aboutme {
+  border-color: #0d4879;
+  border-radius: 20px !important;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(244, 247, 248, 0.5) 100%);
+  box-shadow: rgba(0, 10, 20, 0.23) 0px 25px 50px -12px;
+}
+
+.lightmode .text-highlight {
+  color: #0d4879 !important;
+}
+
+.lightmode .mycard-portoheader {
+  background-color: #ffffff00;
+}
+
+.lightmode .foto-aboutme {
+  /* background: rgba(138, 177, 209, 0.18); */
+  background-image: url("img/foto.png");
+  background-size: cover;
+}
+/* ============== SCROLL BAR ================= */
+
+/* width */
+.lightmode::-webkit-scrollbar {
+  background: rgb(213, 219, 228);
+  width: 10px;
+}
+
+/* Track */
+.lightmode::-webkit-scrollbar-track {
+  border-radius: 0px;
+  margin: 4px 3px !important;
+}
+
+/* Handle */
+.lightmode::-webkit-scrollbar-thumb {
+  background: rgb(37, 60, 78);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.lightmode::-webkit-scrollbar-thumb:hover {
+  background: #206caa;
+}
+
+/* ============= BUTTON SCROLL TO TOP ============== */
+.lightmode #btn-back-to-top {
+  background: rgb(19, 19, 19);
+  filter: invert(100%);
+}
+
+.lightmode .slider {
+  background-color: #ccc;
+}
+
+.lightmode .slider:before {
+  background-color: white;
+}
+
+input:checked + .slider {
+  background-color: #227aad;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #227aad;
+}

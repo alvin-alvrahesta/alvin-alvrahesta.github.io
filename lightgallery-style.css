@@ -1,0 +1,189 @@
+.lightmode {
+  background: #e6eaee;
+}
+
+.lightmode .text-terang {
+  color: #151520;
+}
+
+.lightmode .text-highlight {
+  color: #0d4879 !important;
+}
+
+.lightmode .gal {
+  box-shadow: rgba(2, 0, 0, 0.25) 5px 10px 10px;
+}
+
+.lightmode .gal:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 20px 40px 50px;
+  width: 70%;
+}
+
+.lightmode .text-terang-50 {
+  color: #343d47;
+}
+
+.lightmode .gallery-text {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #ffffff50 0%, #ffffff20 100%) !important;
+  color: rgba(22, 37, 54, 0.55);
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(1, 12, 19, 0.2);
+}
+
+.lightmode input[type="checkbox"]:checked ~ div {
+  box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.7), inset 4px 4px 12px rgba(12, 30, 44, 0.4), 0 0 15px rgba(255, 255, 255, 0.5),
+    3px 3px 40px rgba(23, 49, 80, 0.02);
+  color: rgb(5, 25, 31);
+  text-shadow: 0 0 50px rgb(68, 122, 168), 0 0 40px rgb(68, 122, 168), 0 0 50px rgb(68, 122, 168);
+  animation: glow 3.5s linear infinite;
+}
+
+.lightmode input[type="checkbox"]:checked ~ .gallery-text {
+  animation: size 5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(80deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes size {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.lightmode html {
+  scroll-behavior: smooth;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+}
+
+.lightmode body {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+}
+
+.lightmode .myheader {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+  box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
+}
+
+.lightmode .bg-gelap {
+  backdrop-filter: blur(15px);
+  background: #eaf3f7aa !important;
+  box-shadow: rgba(3, 16, 27, 0.03) 0px 10px 20px -12px, rgba(0, 1, 2, 0.03) 0px 18px 16px -18px;
+}
+
+.lightmode .mybtn-contact {
+  background-color: #97a9da30;
+  border: none;
+}
+.lightmode a {
+  color: #fbfbfb;
+}
+a:hover,
+.lightmode a:focus {
+  color: #104685 !important;
+}
+
+.lightmode .btn {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
+  padding: 13px 16px !important;
+  transition: 0.6s;
+}
+.lightmode .btn:hover {
+  color: #104685;
+  transform: translateY(-3px) !important;
+}
+
+.lightmode .karya {
+  width: 100vw;
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+}
+
+.lightmode .aboutme {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+}
+
+.lightmode .footer {
+  background: #ffffffaa !important;
+  background: radial-gradient(circle, #e0e6ebbb 0%, #c1cad6bb 100%) !important;
+}
+
+.lightmode .column-gallery img {
+  box-shadow: rgba(11, 15, 19, 0.2) 5px 15px 20px;
+}
+
+.lightmode hr {
+  opacity: 1;
+  color: #104685;
+  background-color: #104685;
+}
+.lightmode .hr-long {
+  opacity: 0.35;
+  color: #0e2e3f;
+  background-color: #0e2e3f;
+}
+.lightmode .text-white {
+  color: #fbfbfb !important;
+}
+
+.lightmode .foto-aboutme {
+  background: rgba(138, 177, 209, 0.03);
+  background-image: url("img/foto.png");
+  background-size: cover;
+}
+/* ============== SCROLL BAR ================= */
+
+/* width */
+.lightmode::-webkit-scrollbar {
+  background: rgb(213, 219, 228);
+  width: 10px;
+}
+
+/* Track */
+.lightmode::-webkit-scrollbar-track {
+  border-radius: 0px;
+  margin: 4px 3px !important;
+}
+
+/* Handle */
+.lightmode::-webkit-scrollbar-thumb {
+  background: rgb(37, 60, 78);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.lightmode::-webkit-scrollbar-thumb:hover {
+  background: #206caa;
+}
+
+/* ============= BUTTON SCROLL TO TOP ============== */
+.lightmode #btn-back-to-top {
+  z-index: 9 !important;
+  cursor: pointer;
+  position: fixed;
+  bottom: 145px;
+  right: 18px;
+  display: none;
+  transition: 0.5s;
+  background: rgb(14, 13, 2);
+  filter: invert(90%);
+}
